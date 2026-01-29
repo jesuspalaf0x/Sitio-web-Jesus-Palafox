@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8cf226",
+                        "background-light": "#f7f8f5",
+                        "background-dark": "#192210",
+                        "brand-dark": "#032613",
+                        "neutral-gray": "#f2f2f2"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .content-section {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .custom-bullet::before {
+            content: "•";
+            color: #8cf226;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="bg-neutral-gray text-brand-dark dark:bg-background-dark dark:text-white min-h-screen">
+<div class="relative flex h-auto w-full flex-col group/design-root overflow-x-hidden">
+<!-- Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-neutral-200 dark:border-white/10 px-4 md:px-20 lg:px-40 py-3">
+<div class="flex items-center justify-between max-w-[1200px] mx-auto">
+<div class="flex items-center gap-4 text-brand-dark dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Jesús Palafox</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Logística</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Bienes Raíces</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Marketing</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Gastronomía</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-brand-dark text-sm font-bold transition-transform hover:scale-105">
+<span class="truncate">Contacto</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center py-12 px-4 md:px-10">
+<div class="max-w-[800px] w-full bg-white dark:bg-zinc-900/50 rounded-xl shadow-sm overflow-hidden p-6 md:p-12">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 pb-8">
+<a class="text-zinc-500 text-sm font-medium hover:text-primary" href="#">Inicio</a>
+<span class="text-zinc-300 text-sm font-medium">/</span>
+<span class="text-brand-dark dark:text-zinc-200 text-sm font-medium">Política de Privacidad</span>
+</nav>
+<!-- Page Heading -->
+<div class="flex flex-col gap-3 mb-10 border-b border-zinc-100 dark:border-zinc-800 pb-8">
+<h1 class="text-brand-dark dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Política de Privacidad</h1>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-zinc-400 text-sm">schedule</span>
+<p class="text-zinc-500 dark:text-zinc-400 text-base font-normal">Última actualización: 24 de Octubre 2023</p>
+</div>
+</div>
+<!-- Content Sections -->
+<article class="space-y-12">
+<section class="content-section pb-8">
+<h2 class="text-brand-dark dark:text-white tracking-tight text-2xl font-bold leading-tight mb-4 flex items-center gap-3">
+<span class="w-1 h-6 bg-primary rounded-full"></span>
+                            Información que recopilamos
+                        </h2>
+<p class="text-zinc-700 dark:text-zinc-300 text-base leading-relaxed mb-4">
+                            En jesús-palafox.com, la privacidad de nuestros visitantes es de extrema importancia. Recopilamos información personal que usted nos proporciona directamente cuando utiliza nuestros servicios de consultoría, incluyendo:
+                        </p>
+<ul class="list-none pl-6 space-y-2 text-zinc-700 dark:text-zinc-300">
+<li class="custom-bullet">Nombre completo y datos de contacto profesional.</li>
+<li class="custom-bullet">Dirección de correo electrónico y número telefónico.</li>
+<li class="custom-bullet">Información sobre sus intereses en logística, marketing o bienes raíces.</li>
+<li class="custom-bullet">Datos técnicos como dirección IP y comportamiento de navegación a través de cookies.</li>
+</ul>
+</section>
+<section class="content-section pb-8">
+<h2 class="text-brand-dark dark:text-white tracking-tight text-2xl font-bold leading-tight mb-4 flex items-center gap-3">
+<span class="w-1 h-6 bg-primary rounded-full"></span>
+                            Uso de sus datos
+                        </h2>
+<p class="text-zinc-700 dark:text-zinc-300 text-base leading-relaxed">
+                            La información que recopilamos se utiliza para mejorar su experiencia y proporcionar servicios personalizados. Específicamente, utilizamos sus datos para:
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+<div class="p-4 bg-neutral-gray dark:bg-white/5 rounded-lg border-l-4 border-primary">
+<h4 class="font-bold text-sm mb-1 uppercase tracking-wider text-zinc-500">Gestión de Servicios</h4>
+<p class="text-sm">Procesar solicitudes de consultoría en logística y marketing.</p>
+</div>
+<div class="p-4 bg-neutral-gray dark:bg-white/5 rounded-lg border-l-4 border-primary">
+<h4 class="font-bold text-sm mb-1 uppercase tracking-wider text-zinc-500">Comunicación</h4>
+<p class="text-sm">Enviar actualizaciones sobre el sector inmobiliario y gastronómico.</p>
+</div>
+</div>
+</section>
+<section class="content-section pb-8">
+<h2 class="text-brand-dark dark:text-white tracking-tight text-2xl font-bold leading-tight mb-4 flex items-center gap-3">
+<span class="w-1 h-6 bg-primary rounded-full"></span>
+                            Protección de la información
+                        </h2>
+<p class="text-zinc-700 dark:text-zinc-300 text-base leading-relaxed">
+                            Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal. Utilizamos encriptación avanzada (SSL) para proteger los datos transmitidos en línea y limitamos el acceso físico a nuestras instalaciones de procesamiento de datos.
+                        </p>
+</section>
+<section class="content-section pb-8 border-none">
+<h2 class="text-brand-dark dark:text-white tracking-tight text-2xl font-bold leading-tight mb-4 flex items-center gap-3">
+<span class="w-1 h-6 bg-primary rounded-full"></span>
+                            Sus derechos (ARCO)
+                        </h2>
+<p class="text-zinc-700 dark:text-zinc-300 text-base leading-relaxed mb-6">
+                            Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales. Para ejercer estos derechos, puede ponerse en contacto con nuestro oficial de privacidad.
+                        </p>
+<div class="bg-primary/10 border border-primary/20 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+<div>
+<h3 class="font-bold text-brand-dark dark:text-white">¿Desea ejercer sus derechos?</h3>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">Contacte directamente con nuestro departamento legal.</p>
+</div>
+<a class="bg-brand-dark text-white px-6 py-3 rounded-lg font-bold text-sm flex items-center gap-2 hover:bg-brand-dark/90 transition-all" href="mailto:privacy@jesuspalafox.com">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+                                Contactar Oficial de Privacidad
+                            </a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="w-full bg-white dark:bg-background-dark border-t border-zinc-200 dark:border-white/10 mt-12 py-12 px-4 md:px-20 lg:px-40">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-brand-dark dark:text-white">
+<div class="size-5 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"></path>
+</svg>
+</div>
+<span class="font-bold">Jesús Palafox</span>
+</div>
+<p class="text-sm text-zinc-500">Consultoría integral en logística, bienes raíces y marketing estratégico.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-sm">Legal</h4>
+<a class="text-sm text-zinc-500 hover:text-primary transition-colors" href="#">Aviso Legal</a>
+<a class="text-sm text-primary font-semibold underline underline-offset-4" href="#">Privacidad</a>
+<a class="text-sm text-zinc-500 hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-sm">Servicios</h4>
+<a class="text-sm text-zinc-500 hover:text-primary transition-colors" href="#">Inmobiliaria</a>
+<a class="text-sm text-zinc-500 hover:text-primary transition-colors" href="#">Estrategia</a>
+<a class="text-sm text-zinc-500 hover:text-primary transition-colors" href="#">Distribución</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-sm">Síguenos</h4>
+<div class="flex gap-4">
+<a class="text-zinc-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="text-zinc-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto border-t border-zinc-100 dark:border-white/5 mt-12 pt-8 text-center text-xs text-zinc-400">
+                © 2023 Jesús Palafox. Todos los derechos reservados.
+            </div>
+</footer>
+</div>
+</body></html>

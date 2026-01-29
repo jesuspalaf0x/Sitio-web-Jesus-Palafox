@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>OnRoute Logistics | Jesús Palafox</title>
+
+    <!-- Fonts & Styles -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme-onroute">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="brand">Jesús<span style="color:var(--brand-primary)">.</span></a>
+            <div class="nav-links hidden md:flex items-center gap-4">
+                <a href="index.html">Inicio</a>
+                <a href="onroute.html" class="active">Logística</a>
+                <a href="landlord.html">Bienes Raíces</a>
+                <a href="cocoati.html">Gastronomía</a>
+                <a href="marketing.html">Marketing</a>
+                <a href="contacto.html" class="btn-contact">Reservar</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+    <!-- Mobile Menu (Copy) -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="brand">Menú</span>
+            <button class="close-menu material-symbols-outlined">close</button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="text-xl">Inicio</a>
+            <a href="onroute.html" class="text-xl font-bold">Logística (OnRoute)</a>
+            <a href="landlord.html" class="text-xl">Bienes Raíces</a>
+            <a href="cocoati.html" class="text-xl">Gastronomía</a>
+            <a href="marketing.html" class="text-xl">Marketing & IA</a>
+            <a href="contacto.html" class="text-xl text-primary">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden"
+        style="height: 70vh; min-height: 500px;">
+        <div class="absolute inset-0 z-0">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3lzz-dNRxHv6DMxTxs7dtlWbUNvw6JHUP_WLiRmF4pX3GRTrgYhhP5D-Kel6h4vM_O-IAMBU76hbroA3F4bABzThnSmT0J3MTto-BdICtyBTU8on8fpjcAIuWpqW3FJgcp5AyhkjWUpZR8Nh2r5yBB3z5wtEIk15n8USqNZgTmVN61Bw-SBwB8xm_Yfuph88Rmxgko1-Y15rWHCyCtgv9Avvq7l9anNhrOcvmrS7_Hlgdc-7SgrhpUT5sE9eS6MtzzTOjiveqAXo"
+                alt="Luxury Van" style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(rgba(3, 38, 19, 0.6), rgba(3, 38, 19, 0.8));">
+            </div>
+        </div>
+        <div class="container relative z-10 animate-on-scroll">
+            <span
+                style="background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); padding: 5px 15px; border-radius: 99px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: 1px solid rgba(255,255,255,0.3);">Proyecto
+                Destacado</span>
+            <h1
+                style="font-size: 4rem; line-height: 1.1; margin: 1.5rem 0; font-family: var(--font-display); font-weight: 800;">
+                OnRoute: Logística Premium</h1>
+            <p style="font-size: 1.25rem; font-weight: 300; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9;">
+                Transporte ejecutivo y logística privada conectando el Aeropuerto de Cancún, Zona Hotelera, Tulum y
+                Chichén Itzá.
+            </p>
+            <a href="#services" class="btn btn-primary">Ver Servicios</a>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <h2 style="font-size: 2.5rem; color: var(--color-onroute-dark); margin-bottom: 1.5rem;">Excelencia
+                        en Movimiento</h2>
+                    <p class="text-muted" style="margin-bottom: 1rem;">
+                        OnRoute nació de la necesidad de ofrecer un servicio de transporte que combinara la puntualidad
+                        suiza con la hospitalidad mexicana.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-top: 2rem; display: grid; gap: 1rem;">
+                        <li class="flex items-center gap-4">
+                            <span class="material-symbols-outlined" style="color: var(--brand-primary);">wifi</span>
+                            <strong>Wi-Fi 5G de alta velocidad</strong>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="material-symbols-outlined"
+                                style="color: var(--brand-primary);">translate</span>
+                            <strong>Conductores Bilingües</strong>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="material-symbols-outlined" style="color: var(--brand-primary);">shield</span>
+                            <strong>Seguridad y Monitoreo 24/7</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="animate-on-scroll">
+                    <!-- Gallery Grid -->
+                    <div class="grid gap-4">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU0AokXUN_3npRi49dh3GkkG__aakagEI1kNG4jZaDjwCtJdToXFfWs4LKHdRUl1Dcmw91w8R7CPs2POdwMoqCiBgRUgDDREhFx1eR9JTSPeYGYssm8K__TvovZax15d6n2hyzl4OW8MsrCZo7F5VDWWoNW4yplRoxjMQmehIGw9dzJUw-8yLGewqvvjcjdWkZkYgl_A-ZUwD7mgNL8ZwsPdfnGk3fDZvwvmo9WZdmfeF2SAQUsiel6MXvxUEb0DY_YZVV_7FzhRA"
+                            alt="Interior" style="border-radius: 1rem; width: 100%;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfaja3q-G_gaY1jldr-w6f6P0blBO4RLnWfG3D7R9BywF5c1yO1MQcVsk-54OKowMed_fRD8zESyO-mOfb8itImUL49eHr6JSpI3u_MFUSKsmcb2gUOtfCQT3P_6rilb50psdTFdd72X8c7uGPZFNualBHFuMkWUk1kExlHMsUrPiXAQShI2ttqwiKJFOy_pMISVwTtwTsxa7tWkKq2BJyx6ORjd7v2puwkCDiJ_m1Y-nASvC-sZ1Uhi2fA9l3l3kUhYA4jdB_W64"
+                            alt="Exterior" style="border-radius: 1rem; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h3>¿Listo para viajar?</h3>
+            <p class="text-muted" style="margin: 1rem 0 2rem;">Contáctanos para una cotización personalizada.</p>
+            <a href="contacto.html" class="btn btn-primary">Reservar Ahora</a>
+            <div style="margin-top: 3rem; font-size: 0.8rem; color: var(--text-muted);">&copy; 2026 OnRoute Global.
+                Parte de Jesus Palafox Group.</div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

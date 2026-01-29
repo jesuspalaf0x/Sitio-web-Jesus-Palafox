@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8cf226",
+                        "secondary-orange": "#F29441",
+                        "background-light": "#f2f2f2",
+                        "background-dark": "#131612",
+                        "forest-dark": "#032613",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "heading": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-forest-dark dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-forest-dark/5 dark:border-white/5 px-10 py-5 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4 text-forest-dark dark:text-white">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-forest-dark">deployed_code</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] heading-font uppercase">Jesús Palafox</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Logística</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Bienes Raíces</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Marketing</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Gastronomía</a>
+<a class="text-sm font-semibold text-primary underline decoration-2 underline-offset-8" href="#">Proyectos</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-forest-dark text-white dark:bg-white dark:text-forest-dark text-sm font-bold transition-transform hover:scale-105 active:scale-95">
+<span class="truncate">Contacto</span>
+</button>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-6 py-12 md:py-20">
+<!-- Page Heading -->
+<div class="mb-16 max-w-2xl">
+<span class="inline-block px-3 py-1 bg-primary/20 text-forest-dark dark:text-primary rounded-full text-xs font-bold uppercase tracking-widest mb-4">Innovation Roadmap</span>
+<h1 class="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight heading-font mb-6">Próximos Proyectos</h1>
+<p class="text-xl text-forest-dark/60 dark:text-white/60 font-medium leading-relaxed">
+                        Forjando el futuro de la eficiencia empresarial y la infraestructura comunitaria mediante tecnologías emergentes.
+                    </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+<!-- Card 1: Antigravity Business Software -->
+<div class="group relative flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-2xl shadow-forest-dark/5 hover:shadow-primary/10 transition-all duration-500 border border-transparent hover:border-primary/30">
+<div class="relative h-72 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-forest-dark/20 mix-blend-overlay z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Abstract neural network nodes in electric lime" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoF3SbALnWG3qVQpo5M0kSEWw6t6oY1TkFrAM0luTRWb8JlYkilzT0GmRLFdkC-UStfql3LvWmT_HQol_LaWh7Iodgx5wLzqTvkodUj_NuffQvs4gYobYI6Dsp6QczYF_NcGOtjJFDg7RN_MsreNfqcre_RZGYY_VWLfNTqRIbjD9WR9yiN1-pXsJhDZgXOlNNy4if7aPxpE69pKEXsx-L1jCQRWHeMujZbuB5zTwRYlnvSvShdBvxOIepoCGVDdk3surlSD_foD0");'>
+</div>
+<div class="absolute top-6 left-6 z-20">
+<span class="flex items-center gap-2 px-4 py-1.5 bg-primary text-forest-dark text-xs font-black rounded-full uppercase tracking-tighter shadow-lg">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest-dark opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-forest-dark"></span>
+</span>
+                                    En Desarrollo
+                                </span>
+</div>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex items-start justify-between mb-4">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<span class="text-xs font-bold text-forest-dark/40 dark:text-white/40 heading-font uppercase">SME Management</span>
+</div>
+<h3 class="text-3xl font-bold heading-font mb-4">Antigravity Business Software</h3>
+<p class="text-forest-dark/70 dark:text-white/70 mb-8 flex-grow leading-relaxed">
+                                Gestión inteligente para PyMEs. Control de ingresos en tiempo real, inventarios predictivos y escaneo de tickets automatizado mediante visión artificial.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary">analytics</span>
+                                    Dashboard IA
+                                </div>
+<div class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+                                    Stock Auto
+                                </div>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary text-forest-dark font-black text-sm uppercase tracking-widest hover:bg-primary/90 transition-all hover:translate-y-[-2px] active:translate-y-0">
+                                Notificarme al lanzar
+                            </button>
+</div>
+</div>
+<!-- Card 2: Plataforma Ciudadana -->
+<div class="group relative flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-2xl shadow-forest-dark/5 hover:shadow-secondary-orange/10 transition-all duration-500 border border-transparent hover:border-secondary-orange/30">
+<div class="relative h-72 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-orange/40 to-forest-dark/20 mix-blend-overlay z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Digital representation of city connectivity in orange" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHyw6XjuM8qixcsxgR1FoARnM_Gl2LxMSjPFhWehBCD1KnyvNFrE-vDyZ4SW4RNZzHcCeJ0nvGcSVz6BwQv0DD3L8bHekrj_XIkbCiq8Foe1CWMgTOcOjZn0vdZEgLzljT-I93_MrGTVRm0zlthQ7v4MFV90GWzW78Mi2HlQsrFKprfOIsTWpqduduoiCJiiUF5NXlR6EX2nPt82TwRA6izaeCMntONNHpKT1zXGscDNrGsY_2MmbvtSkHcaI_vwLw3GELCtyUQAw");'>
+</div>
+<div class="absolute top-6 left-6 z-20">
+<span class="flex items-center gap-2 px-4 py-1.5 bg-secondary-orange text-white text-xs font-black rounded-full uppercase tracking-tighter shadow-lg">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+</span>
+                                    En Desarrollo
+                                </span>
+</div>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex items-start justify-between mb-4">
+<div class="size-12 rounded-xl bg-secondary-orange/10 flex items-center justify-center text-secondary-orange">
+<span class="material-symbols-outlined text-3xl">public</span>
+</div>
+<span class="text-xs font-bold text-forest-dark/40 dark:text-white/40 heading-font uppercase">Social Infrastructure</span>
+</div>
+<h3 class="text-3xl font-bold heading-font mb-4">Plataforma Ciudadana</h3>
+<p class="text-forest-dark/70 dark:text-white/70 mb-8 flex-grow leading-relaxed">
+                                Red social descentralizada para el impacto civil. Herramientas de reporte social en tiempo real, transparencia comunitaria y coordinación de infraestructura cívica.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-secondary-orange">hub</span>
+                                    Nodos Cívicos
+                                </div>
+<div class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-secondary-orange">verified</span>
+                                    Blockchain
+                                </div>
+</div>
+<button class="w-full py-4 rounded-xl bg-secondary-orange text-white font-black text-sm uppercase tracking-widest hover:bg-secondary-orange/90 transition-all hover:translate-y-[-2px] active:translate-y-0 shadow-lg shadow-secondary-orange/20">
+                                Notificarme al lanzar
+                            </button>
+</div>
+</div>
+</div>
+<!-- Technologies Section -->
+<div class="bg-forest-dark text-white rounded-3xl p-12 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+<div class="relative z-10">
+<h2 class="text-3xl font-bold heading-font mb-8">Tecnologías integradas</h2>
+<div class="flex flex-wrap gap-6">
+<div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:border-primary transition-colors bg-white/5">
+<span class="material-symbols-outlined text-primary">data_thresholding</span>
+<span class="font-bold text-sm">Computer Vision</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:border-primary transition-colors bg-white/5">
+<span class="material-symbols-outlined text-primary">token</span>
+<span class="font-bold text-sm">Web3 / Decentralization</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:border-primary transition-colors bg-white/5">
+<span class="material-symbols-outlined text-primary">database</span>
+<span class="font-bold text-sm">Neural Networks</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:border-primary transition-colors bg-white/5">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="font-bold text-sm">Zero-Knowledge Proofs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Callout -->
+<div class="mt-24 text-center pb-20">
+<h4 class="text-2xl font-bold mb-4 heading-font">¿Interesado en colaborar?</h4>
+<p class="text-forest-dark/60 dark:text-white/60 mb-8 max-w-lg mx-auto">
+                        Buscamos early adopters y socios estratégicos para las fases beta de estas innovaciones.
+                    </p>
+<a class="inline-flex items-center gap-2 font-black text-primary hover:text-forest-dark dark:hover:text-white transition-colors group" href="mailto:hola@jesuspalafoh.com">
+                        CONTACTAR AHORA
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</main>
+</div>
+</div>
+</body></html>

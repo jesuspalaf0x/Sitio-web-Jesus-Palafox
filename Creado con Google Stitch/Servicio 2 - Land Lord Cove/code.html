@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Landlord Cove | Jesús Palafox</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b3d733", // Olive/Lime green accent
+                        "primary-dark": "#9ab82a",
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#1d2012",
+                        "text-main": "#032613", // Deep Forest Green
+                        "text-muted": "#3c5c4a",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            color: #032613;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Serif', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-[#e3e4dc] bg-white/95 backdrop-blur-md px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4 text-text-main">
+<div class="flex items-center justify-center rounded bg-primary/20 p-1.5 text-text-main">
+<span class="material-symbols-outlined text-2xl">castle</span>
+</div>
+<h2 class="text-text-main text-lg font-bold leading-tight tracking-[-0.015em] font-display">Jesús Palafox | Landlord Cove</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 hidden lg:flex">
+<div class="flex items-center gap-9">
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Inicio</a>
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Logística</a>
+<a class="text-text-main border-b-2 border-primary text-sm font-bold leading-normal pb-0.5" href="#">Bienes Raíces</a>
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Marketing</a>
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Gastronomía</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-primary-dark transition-colors text-text-main text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Contacto</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="lg:hidden">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="@container w-full">
+<div class="relative flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 w-full" data-alt="Luxury modern villa in Tulum with concrete finish, private pool and lush palm trees" style='background-image: linear-gradient(rgba(3, 38, 19, 0.4) 0%, rgba(3, 38, 19, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtmMMri_tAgMDRRlKUj0Rmj2n_Gu6bjsoA373I1Cjg7wCZO-wlvjdk18aoAvSyqXoTTC5Wm-qIhNC35oXY_NCNOaLfnHH4jr7xynI_zTs5FRz0vgus-hdkvIkncth6y8QEsdQK6NPjNxyla3JwkfjOWoZUJmgSvUpaw8UeIpuM2LjjcPur6Q3O_4lSXWmHxSuBRogPzZz8Wtyq5YiTz9qkehd_B0aUZ1-rVnp1svYl4fp8zd2CsbcO7aug1ADef8RA0_hWTaW3Okk");'>
+<div class="flex flex-col gap-4 text-center max-w-[800px] animate-fade-in-up">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Bienvenido a Tulum</span>
+<h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-[-0.033em] drop-shadow-lg font-display">
+                        Landlord Cove: Exclusividad en la Riviera Maya
+                    </h1>
+<h2 class="text-white/90 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto font-body">
+                        Curaduría inmobiliaria de alta gama y gestión de propiedades por Jesús Palafox.
+                    </h2>
+</div>
+<div class="flex gap-4 mt-4">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-primary-dark transition-all text-text-main text-base font-bold tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+<span class="truncate">Ver Propiedades</span>
+</button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-base font-bold tracking-[0.015em] transition-all">
+<span class="truncate">Saber Más</span>
+</button>
+</div>
+</div>
+</div>
+<div class="layout-container flex h-full grow flex-col items-center">
+<!-- Services Section -->
+<div class="px-4 md:px-10 lg:px-40 py-16 w-full max-w-[1440px]">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<h2 class="text-primary text-sm font-bold uppercase tracking-wider">Nuestros Servicios</h2>
+<h3 class="text-text-main text-3xl md:text-4xl font-bold leading-tight font-display max-w-[720px]">
+                            Soluciones Inmobiliarias Integrales
+                        </h3>
+<p class="text-text-muted text-lg font-normal leading-relaxed max-w-[720px]">
+                            Ofrecemos una gestión completa para inversiones inteligentes y estancias de lujo en el Caribe Mexicano.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Service 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e3e4dc] bg-white p-6 hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 text-text-main group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">landscape</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-text-main text-xl font-bold leading-tight font-display">Venta de Terrenos</h4>
+<p class="text-text-muted text-sm leading-relaxed">Lotes de alta plusvalía e inversión estratégica en zonas de desarrollo clave.</p>
+</div>
+<div class="h-[180px] w-full rounded-lg overflow-hidden mt-2">
+<img class="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Aerial view of green land plots near the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATf-fCtQMamKNSKL78_0hDbYr63Iu-vhRGzJ9IZbmifDR6V2sA2ZzilJHA2Ta9HkoPXujQTD6f1byBigNeI5AwmhtebY0Yygcewlf5aybuU3g-jAvA-7SZzuVt39N65WKcqCsCDQOksJ7SdX7kEHUCH9PzIj8S_j0qPHSp0IDpd4laFHQ5p644wCxDnHAiN-_tYmnshokjwaAlMUdGx6FzfICpXPugBXUExtlvlBUhFZtsr4wEbZTOtSz24NLddg5N4IJ3fNHHKq4"/>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e3e4dc] bg-white p-6 hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 text-text-main group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">holiday_village</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-text-main text-xl font-bold leading-tight font-display">Rentas Vacacionales</h4>
+<p class="text-text-muted text-sm leading-relaxed">Estancias de lujo curadas para experiencias inolvidables en la jungla y playa.</p>
+</div>
+<div class="h-[180px] w-full rounded-lg overflow-hidden mt-2">
+<img class="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Modern apartment interior with pool view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6mW0azrc3H6kN41r37GEkBpP3KEUHSuSxIHnWcLCWbrwB9gsqOfhP4xvu62sZ5Kd9q7z3jnYpIsLQICMmoI9c53dwrXU2-BgvqpAkdiHpZ8iliBYHdi04MYAKcSVFxlZahNpBqBIrO7X43GuzBtztrOIsMkkeATPldVDAzkh10KLZ9-3-Kr-hQiipoVeCs-8Ese0mIBaSolkjjDZWPir4idlEglQWtNCahgbehBcviuf7LN-sJwAJQtGJmPei7Oe2a64Uyv-1_Sg"/>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e3e4dc] bg-white p-6 hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 text-text-main group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-text-main text-xl font-bold leading-tight font-display">Largo Plazo</h4>
+<p class="text-text-muted text-sm leading-relaxed">Alquileres sostenibles para vivir el sueño de Tulum por temporadas extendidas.</p>
+</div>
+<div class="h-[180px] w-full rounded-lg overflow-hidden mt-2">
+<img class="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Cozy modern living room with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeLFTD7wGMkCNG7dzMvDbOzHcPSjaevCH7eOuJSqBiEyOfn5iQsUbyJIVQchqR1jSgXa2HiPXvrUHGQ56pkxMvFGFzjt8ijraEwh_amgzvyzwAfeTFSyGDQ9_wulYHEPnQDqBTu3Hu9kqUttRv7zS4ISSGLWns2Uz2jZyDDcebvrYgeU-HL6h3VJNWAJGPi2RV0fB-iJRM7ykmNwXfy8OwCvG-41dTrNQFhD76hzo46dWph2kGuoRBASkcrLjDGFeMZYHduUGDiIU"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Properties Section -->
+<div class="w-full bg-[#f3f4f1] py-16 px-4 md:px-10 lg:px-40 flex justify-center">
+<div class="flex flex-col gap-10 max-w-[1440px] w-full">
+<div class="flex flex-col md:flex-row justify-between items-end gap-4 border-b border-[#dcded5] pb-6">
+<div class="flex flex-col gap-2">
+<h2 class="text-text-main text-3xl md:text-4xl font-bold font-display">Propiedades Destacadas</h2>
+<p class="text-text-muted">Una selección exclusiva de nuestras mejores oportunidades.</p>
+</div>
+<a class="text-text-main font-bold hover:text-primary transition-colors flex items-center gap-1 group" href="#">
+                            Ver todo el catálogo 
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Property Card 1 -->
+<div class="flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-text-main text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider">Venta</div>
+<img class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Modern concrete villa exterior with tropical plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbkUguu7U8VgRxWLO5J8G9HbvGokAFlt_rFrJuq4wbfndZC8JgNjxnrYeKZrezR-1exXqB1t33wox_AuMdonpP2F5LurgJbhUnpC-MHqXV4Qh-oZKiyZE5DBb-csUAXoMPMUPEuNhCe5H1zevhhQTn43sIDzx6I_cwlUcYleLNJl5C8613G1028I2jsvsifebRVL1e2l6CKXLroO2f1jYUJ11Aecol1LL1-7SvJ1ukDWEmkL7UEzGENFUjm480JV7YPHR4RQnAbUQ"/>
+<div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">$450,000 USD</div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Aldea Zama</div>
+<h3 class="text-text-main text-xl font-bold font-display leading-tight">Villa Kotal - Luxury Jungle</h3>
+</div>
+<div class="flex items-center gap-4 text-text-muted text-sm border-y border-[#f3f4f1] py-3">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bed</span> 3 Beds</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bathtub</span> 3.5 Baths</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">square_foot</span> 280 m²</div>
+</div>
+<button class="w-full py-2 border border-text-main/20 rounded-lg text-text-main font-bold hover:bg-text-main hover:text-white transition-colors">
+                                    Ver Detalles
+                                </button>
+</div>
+</div>
+<!-- Property Card 2 -->
+<div class="flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-primary text-text-main text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider">Renta</div>
+<img class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Luxury bathroom with stone bathtub and garden view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZHGHHbnOjoJgbVnlK6mP0RL0Zr4OQEePx43-NMU2_yfx_-D3DM1rim02y89ImzzY4NBtLYWdo9AR629Pjem53nZu7BVNgieLRDeZwJ_kNJzx8bboMbWCDRVUfeEFKkjIzToFLfAIaT9sRU6YhVJhs2FEAMWPVqyDZic4h2aawwB5jAm84aU2oMiB7KENMCajYovHvqFNtR-LCCf2ABfkVEWx6HN6I5vhd8-1ad3c9wAu_X9COwdp9QXNHLagvKpNDaXiE87eqDjY"/>
+<div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">$250 USD / Noche</div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">La Veleta</div>
+<h3 class="text-text-main text-xl font-bold font-display leading-tight">Penthouse Zen con Jacuzzi</h3>
+</div>
+<div class="flex items-center gap-4 text-text-muted text-sm border-y border-[#f3f4f1] py-3">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bed</span> 2 Beds</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bathtub</span> 2 Baths</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">square_foot</span> 120 m²</div>
+</div>
+<button class="w-full py-2 border border-text-main/20 rounded-lg text-text-main font-bold hover:bg-text-main hover:text-white transition-colors">
+                                    Ver Detalles
+                                </button>
+</div>
+</div>
+<!-- Property Card 3 -->
+<div class="flex flex-col bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-text-main text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider">Pre-Venta</div>
+<img class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Modern architectural house facade with minimalist design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDknc2nBpSC5aQqWJBtS26rzT-5zYeBVhImSyyyIdjNb-1kROM1x24g7l4IQSi77gZemihhNaIoUwKGX4Eb3tF_6UmVMG3JQz_XoZi9mCNfzdF5qgp4MUw5ilnDiYGK5JdWiB92eTSHJfHhC4fB9o_Zj1e7SNTZte2ulirmt46r1ixEoJk9eOrgZ2DXSiePJ9nASfhoMKHiPO1egpSDUnHBrQQy29sa_vFHQoKgv9p4nWNUX4-fGWpVCi--PpFlmAl-xfOgs84RyJc"/>
+<div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">Desde $120,000 USD</div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div>
+<div class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Región 15</div>
+<h3 class="text-text-main text-xl font-bold font-display leading-tight">Studios Selva - ROI Project</h3>
+</div>
+<div class="flex items-center gap-4 text-text-muted text-sm border-y border-[#f3f4f1] py-3">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bed</span> 1 Bed</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">bathtub</span> 1 Bath</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-lg">square_foot</span> 60 m²</div>
+</div>
+<button class="w-full py-2 border border-text-main/20 rounded-lg text-text-main font-bold hover:bg-text-main hover:text-white transition-colors">
+                                    Ver Detalles
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Section -->
+<div class="px-4 md:px-10 lg:px-40 py-20 w-full max-w-[1440px]">
+<div class="flex flex-col lg:flex-row gap-12 items-center">
+<!-- Contact Text/Image -->
+<div class="flex-1 flex flex-col gap-6">
+<h2 class="text-text-main text-4xl md:text-5xl font-bold font-display leading-tight">
+                            ¿Listo para tu próxima <span class="text-primary relative inline-block">inversión<svg class="absolute w-full h-3 bottom-1 left-0 text-primary/30 -z-10" preserveaspectratio="none" viewbox="0 0 100 10"><path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path></svg></span>?
+                        </h2>
+<p class="text-text-muted text-lg leading-relaxed">
+                            Ya sea que busques el lugar perfecto para vacacionar o una oportunidad de inversión con altos rendimientos, nuestro equipo experto está listo para asesorarte.
+                        </p>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-2 rounded-full text-text-main">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<span class="font-bold text-text-main">Asesoría Legal</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-2 rounded-full text-text-main">
+<span class="material-symbols-outlined text-xl">trending_up</span>
+</div>
+<span class="font-bold text-text-main">Alto Retorno (ROI)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-2 rounded-full text-text-main">
+<span class="material-symbols-outlined text-xl">design_services</span>
+</div>
+<span class="font-bold text-text-main">Gestión Integral</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-2 rounded-full text-text-main">
+<span class="material-symbols-outlined text-xl">key</span>
+</div>
+<span class="font-bold text-text-main">Llave en mano</span>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="flex-1 w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl border border-[#e3e4dc]">
+<h3 class="text-text-main text-2xl font-bold font-display mb-6">Consultar Disponibilidad</h3>
+<form class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<label class="text-sm font-bold text-text-main" for="name">Nombre Completo</label>
+<input class="w-full rounded-lg border border-[#dcded5] bg-[#f7f8f6] p-3 text-text-main placeholder:text-text-muted/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="name" placeholder="Ej. Juan Pérez" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-sm font-bold text-text-main" for="email">Correo Electrónico</label>
+<input class="w-full rounded-lg border border-[#dcded5] bg-[#f7f8f6] p-3 text-text-main placeholder:text-text-muted/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="email" placeholder="nombre@correo.com" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-sm font-bold text-text-main" for="interest">Estoy interesado en:</label>
+<div class="relative">
+<select class="w-full rounded-lg border border-[#dcded5] bg-[#f7f8f6] p-3 text-text-main appearance-none focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="interest">
+<option>Comprar Propiedad</option>
+<option>Rentar Vacacional</option>
+<option>Renta Largo Plazo</option>
+<option>Vender mi propiedad</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-text-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-sm font-bold text-text-main" for="message">Mensaje</label>
+<textarea class="w-full rounded-lg border border-[#dcded5] bg-[#f7f8f6] p-3 text-text-main placeholder:text-text-muted/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" id="message" placeholder="Cuéntanos más sobre lo que buscas..." rows="4"></textarea>
+</div>
+<button class="mt-2 w-full cursor-pointer rounded-lg bg-primary py-3 px-4 text-center text-text-main text-base font-bold shadow-sm hover:bg-primary-dark transition-colors" type="button">
+                                Enviar Consulta
+                            </button>
+</form>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full bg-text-main text-white py-12 px-4 md:px-10 lg:px-40">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">castle</span>
+<span class="text-xl font-bold font-display">Landlord Cove</span>
+</div>
+<p class="text-white/70 text-sm max-w-sm">
+                            Curaduría experta en bienes raíces, logística y estilo de vida en la Riviera Maya.
+                        </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-lg font-display">Navegación</h4>
+<ul class="flex flex-col gap-2 text-sm text-white/70">
+<li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Logística</a></li>
+<li><a class="text-primary font-bold" href="#">Bienes Raíces</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Marketing</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-lg font-display">Contacto</h4>
+<ul class="flex flex-col gap-2 text-sm text-white/70">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span> contacto@landlord.mx</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> +52 (984) 123 4567</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">pin_drop</span> Tulum, Quintana Roo</li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-white/10 text-center text-xs text-white/40">
+                    © 2023 Jesús Palafox. Todos los derechos reservados.
+                </div>
+</footer>
+</div>
+</div>
+</body></html>

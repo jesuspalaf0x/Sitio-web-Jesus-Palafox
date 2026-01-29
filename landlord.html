@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Landlord Cove Real Estate | Jesús Palafox</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..700;1,400..700&family=Noto+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body.theme-landlord {
+            font-family: 'Noto Sans', sans-serif;
+            --brand-primary: #b3d733;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+
+<body class="theme-landlord">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="brand">Jesús<span style="color:var(--brand-primary)">.</span></a>
+            <div class="nav-links hidden md:flex items-center gap-4">
+                <a href="index.html">Inicio</a>
+                <a href="onroute.html">Logística</a>
+                <a href="landlord.html" class="active">Bienes Raíces</a>
+                <a href="cocoati.html">Gastronomía</a>
+                <a href="marketing.html">Marketing</a>
+                <a href="contacto.html" class="btn-contact">Inversiones</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+    <!-- Mobile Menu (Copy) -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="brand">Landlord Cove</span>
+            <button class="close-menu material-symbols-outlined">close</button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="text-xl">Inicio</a>
+            <a href="onroute.html" class="text-xl">Logística</a>
+            <a href="landlord.html" class="text-xl font-bold">Bienes Raíces</a>
+            <a href="cocoati.html" class="text-xl">Gastronomía</a>
+            <a href="marketing.html" class="text-xl">Marketing & IA</a>
+            <a href="contacto.html" class="text-xl text-primary">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center text-center text-white overflow-hidden"
+        style="min-height: 500px;">
+        <div class="absolute inset-0 z-0">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtmMMri_tAgMDRRlKUj0Rmj2n_Gu6bjsoA373I1Cjg7wCZO-wlvjdk18aoAvSyqXoTTC5Wm-qIhNC35oXY_NCNOaLfnHH4jr7xynI_zTs5FRz0vgus-hdkvIkncth6y8QEsdQK6NPjNxyla3JwkfjOWoZUJmgSvUpaw8UeIpuM2LjjcPur6Q3O_4lSXWmHxSuBRogPzZz8Wtyq5YiTz9qkehd_B0aUZ1-rVnp1svYl4fp8zd2CsbcO7aug1ADef8RA0_hWTaW3Okk"
+                alt="Luxury Villa" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));">
+            </div>
+        </div>
+        <div class="container relative z-10 animate-on-scroll">
+            <span
+                style="color: var(--brand-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Bienvenido
+                a Tulum</span>
+            <h1 style="font-size: 3.5rem; margin: 1rem 0 1.5rem;">Landlord Cove: Exclusividad en la Riviera Maya</h1>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9;">Curaduría inmobiliaria de
+                alta gama y gestión de propiedades.</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#properties" class="btn btn-primary">Ver Propiedades</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Properties -->
+    <section id="properties" style="padding: 5rem 0; background-color: #f7f8f6;">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem; color: #1d2012;">Selección Exclusiva</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Prop 1 -->
+                <div class="card card-hover" style="background: white; border-radius: 1rem; overflow: hidden;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbkUguu7U8VgRxWLO5J8G9HbvGokAFlt_rFrJuq4wbfndZC8JgNjxnrYeKZrezR-1exXqB1t33wox_AuMdonpP2F5LurgJbhUnpC-MHqXV4Qh-oZKiyZE5DBb-csUAXoMPMUPEuNhCe5H1zevhhQTn43sIDzx6I_cwlUcYleLNJl5C8613G1028I2jsvsifebRVL1e2l6CKXLroO2f1jYUJ11Aecol1LL1-7SvJ1ukDWEmkL7UEzGENFUjm480JV7YPHR4RQnAbUQ"
+                        alt="Villa" style="height: 250px; width: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <span
+                            style="color: var(--brand-primary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Venta
+                            - Aldea Zama</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Villa Kotal Luxury</h3>
+                        <p style="font-weight: 700; font-size: 1.1rem;">$450,000 USD</p>
+                    </div>
+                </div>
+                <!-- Prop 2 -->
+                <div class="card card-hover" style="background: white; border-radius: 1rem; overflow: hidden;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZHGHHbnOjoJgbVnlK6mP0RL0Zr4OQEePx43-NMU2_yfx_-D3DM1rim02y89ImzzY4NBtLYWdo9AR629Pjem53nZu7BVNgieLRDeZwJ_kNJzx8bboMbWCDRVUfeEFKkjIzToFLfAIaT9sRU6YhVJhs2FEAMWPVqyDZic4h2aawwB5jAm84aU2oMiB7KENMCajYovHvqFNtR-LCCf2ABfkVEWx6HN6I5vhd8-1ad3c9wAu_X9COwdp9QXNHLagvKpNDaXiE87eqDjY"
+                        alt="Penthouse" style="height: 250px; width: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <span
+                            style="color: var(--brand-primary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Renta
+                            - La Veleta</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Penthouse Zen</h3>
+                        <p style="font-weight: 700; font-size: 1.1rem;">$250 USD / Noche</p>
+                    </div>
+                </div>
+                <!-- Prop 3 -->
+                <div class="card card-hover" style="background: white; border-radius: 1rem; overflow: hidden;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDknc2nBpSC5aQqWJBtS26rzT-5zYeBVhImSyyyIdjNb-1kROM1x24g7l4IQSi77gZemihhNaIoUwKGX4Eb3tF_6UmVMG3JQz_XoZi9mCNfzdF5qgp4MUw5ilnDiYGK5JdWiB92eTSHJfHhC4fB9o_Zj1e7SNTZte2ulirmt46r1ixEoJk9eOrgZ2DXSiePJ9nASfhoMKHiPO1egpSDUnHBrQQy29sa_vFHQoKgv9p4nWNUX4-fGWpVCi--PpFlmAl-xfOgs84RyJc"
+                        alt="Studios" style="height: 250px; width: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <span
+                            style="color: var(--brand-primary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Pre-Venta
+                            - Región 15</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Studios Selva ROI</h3>
+                        <p style="font-weight: 700; font-size: 1.1rem;">Desde $120,000 USD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Info -->
+    <section class="py-20">
+        <div class="container text-center max-w-3xl">
+            <h2 style="margin-bottom: 1.5rem;">Inversiones Inteligentes</h2>
+            <p class="text-muted" style="margin-bottom: 2rem;">
+                Ofrecemos una gestión completa para inversiones inteligentes y estancias de lujo en el Caribe Mexicano.
+                Desde la venta de terrenos con alta plusvalía hasta la administración de rentas vacacionales.
+            </p>
+            <a href="contacto.html" class="btn btn-primary" style="color: #1d2012;">Solicitar Asesoría</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center text-muted" style="padding-top: 2rem; border-top: 1px solid #eee;">
+            &copy; 2026 Landlord Cove.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

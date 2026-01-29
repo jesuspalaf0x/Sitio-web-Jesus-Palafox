@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marketing Digital & IA | Jesús Palafox</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;800&family=Noto+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="theme-marketing">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-wide flex justify-between items-center">
+            <a href="index.html" class="brand" style="color: white; display: flex; align-items: center; gap: 0.5rem;">
+                <span class="material-symbols-outlined" style="color: var(--brand-primary);">dataset</span> Jesús
+                Palafox
+            </a>
+            <div class="nav-links hidden md:flex items-center gap-6">
+                <a href="onroute.html" style="color: rgba(255,255,255,0.7);">Logística</a>
+                <a href="landlord.html" style="color: rgba(255,255,255,0.7);">Real Estate</a>
+                <a href="marketing.html" class="active"
+                    style="color: var(--brand-primary); font-weight: 700; border-bottom: 2px solid var(--brand-primary);">Marketing
+                    & IA</a>
+                <a href="cocoati.html" style="color: rgba(255,255,255,0.7);">Gastronomía</a>
+                <a href="contacto.html" class="btn"
+                    style="background: var(--brand-primary); color: #192210; font-weight: 700; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Contacto</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden" style="color: white;"><span
+                    class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="brand">Marketing & IA</span>
+            <button class="close-menu material-symbols-outlined" style="color: white;">close</button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="text-xl" style="color: rgba(255,255,255,0.7);">Inicio</a>
+            <a href="onroute.html" class="text-xl" style="color: rgba(255,255,255,0.7);">Logística</a>
+            <a href="landlord.html" class="text-xl" style="color: rgba(255,255,255,0.7);">Bienes Raíces</a>
+            <a href="cocoati.html" class="text-xl" style="color: rgba(255,255,255,0.7);">Gastronomía</a>
+            <a href="marketing.html" class="text-xl font-bold" style="color: var(--brand-primary);">Marketing & IA</a>
+            <a href="contacto.html" class="text-xl" style="color: white;">Contacto</a>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="py-20 lg:py-32 relative overflow-hidden">
+        <div class="container-wide flex flex-col-reverse lg:flex-row gap-16 items-center">
+            <!-- Text Content -->
+            <div class="flex-1 relative z-10 animate-on-scroll">
+                <div class="flex items-center gap-2 mb-6"
+                    style="color: var(--brand-primary); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                    <span class="material-symbols-outlined" style="font-size: 1.2rem;">auto_awesome</span>
+                    <span>Soluciones Data-Driven</span>
+                </div>
+
+                <h1
+                    style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 900; letter-spacing: -0.025em;">
+                    Marketing Digital <br>
+                    <span class="glow-text"
+                        style="color: transparent; background-clip: text; -webkit-background-clip: text; background-image: linear-gradient(to right, var(--brand-primary), #16a34a);">
+                        & Inteligencia Artificial</span>
+                </h1>
+
+                <p class="text-muted"
+                    style="font-size: 1.25rem; font-weight: 300; margin-bottom: 2.5rem; max-width: 600px; line-height: 1.6;">
+                    Transformamos datos en decisiones. Implementamos automatización inteligente y estrategias de
+                    optimización para escalar los resultados de tu negocio en tiempo récord.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#audit" class="btn"
+                        style="background: var(--brand-primary); color: #192210; font-weight: 700; box-shadow: 0 0 20px rgba(143,243,43,0.4);">
+                        Solicitar Auditoría
+                    </a>
+                    <a href="proyectos.html" class="btn"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white;">
+                        Ver Casos de Éxito
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-6 mt-12 pt-8" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                    <div class="flex -space-x-3">
+                        <div class="rounded-full"
+                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Zx9lK_chcV43DbPitPirzMsbfbDHmODpWL0MvSAt_tTTaPCeTJpx5_m2mV8Hx6BaYkfJUNpcjOq-Sn1j_ACuAjlyOBzLO0nxP7dv18quP6tYguXlmSGSwKaXh-9YtAxFxBs0hxdDR2UK0nilMgn7Sep74v25hl8RktSZjoHehHWld4SiG1R8O3AAn-I5tRmSYF5y2Yc-GyvV7QnZcYXIeyav0eFULo4IqmkvE9W56I_56Uj02f8hbrVvlUIct0SbDrQwVdlHS5U'); background-size: cover;">
+                        </div>
+                        <div class="rounded-full"
+                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCatF64cOr0qSe4fUJp-s4HmaPWErtL7ak3XpZBBRHlafX_y8aYRWRofvUFOsPPGQIKi8S8mQygenrIBJ83AG62mGXPZ6ozEe6z21Qqqm0Ap0tYVEySBSS44uDhYWbILGkBGWpXqiwGL6Xmg1pcrQtxFLvPzqg0POT_a8g1Sfc8JMPi_agl7um1SU8MlFK45BqMKuRJTa0IGeGRaNoNMnwPrwklAJVFDSinFnq8wJOqRKf4-Nf_p2abZodXIDrYdWMC_8Kx6sZ8Apk'); background-size: cover;">
+                        </div>
+                        <div class="rounded-full"
+                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBV7guKRbiMaChhyL7U2_eo0bKanljPm9JFZlof2M20gSyekmxXJDBnMqWllp5POQEGPXWEJRWUQsy-iJJT5hNZcUyKXJk0qsUDo5366SNDXTbusgKx-Mn-b3rCaKKLjzVGrbO15LYvWCLryG1k-ftEOYnxdRG2c3Lul1_OExmWEOxjzv2m4EB7T_IsNlVoQl2Z6vCkUrUDrbW7seOO4Vod4vFv0msBUcL8i_w4C6Y4FB9A20XjdM3EJKhWXthDGoijhoEHPSzd2yc'); background-size: cover;">
+                        </div>
+                        <div class="rounded-full"
+                            style="width: 40px; height: 40px; background: var(--surface-highlight); border: 2px solid var(--bg-dark); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">
+                            +50</div>
+                    </div>
+                    <p class="text-muted" style="font-size: 0.9rem;">Empresas optimizadas este año</p>
+                </div>
+            </div>
+
+            <!-- Visual Content -->
+            <div class="flex-1 relative animate-on-scroll">
+                <div class="glow-blob" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+                <div class="aspect-square lg:aspect-square shadow-2xl rounded-2xl"
+                    style="overflow: hidden; position: relative; border: 1px solid rgba(255,255,255,0.1); background: var(--surface-dark);">
+                    <div
+                        style="position: absolute; inset: 0; background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCphpAjnt6K68Azr9rN-uPPbu_St3kigeizfHqH6l1GPwtc3eAGQtVfLlL38w_HTQQlAfXBpJIkuKVpvD0LFLk3J_D1IEGgOSv4rY9GBeuQcHiM0EgruXCk6HsvR70bUpvQVdHG5MM0WguU-oRH_gsXqePWEVu6PJNF-hRS1BnpFtKIINXOzy7lfsrefq5jWZ0wGRM9YpvzSyk7SdNdu5S5eegqK5Xed2DpTSAUn0vj-425kqhAPTVvPPVF4wNDHnXMfep5bqnOuyA'); background-size: cover; background-position: center; opacity: 0.8; mix-blend-mode: overlay;">
+                    </div>
+
+                    <!-- Overlay Card -->
+                    <div class="glass-panel rounded-xl"
+                        style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; padding: 1.25rem;">
+                        <div class="flex justify-between items-end mb-4">
+                            <div>
+                                <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem;">
+                                    Crecimiento Mensual</p>
+                                <h3 style="font-size: 2rem; font-weight: 700;">+145%</h3>
+                            </div>
+                            <span class="material-symbols-outlined"
+                                style="font-size: 2.5rem; color: var(--brand-primary);">show_chart</span>
+                        </div>
+                        <div
+                            style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden;">
+                            <div
+                                style="width: 75%; height: 100%; background: var(--brand-primary); border-radius: 99px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section
+        style="background: rgba(33, 43, 26, 0.5); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container-wide py-12">
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Stat 1 -->
+                <div class="p-6 rounded-xl animate-on-scroll"
+                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                        <p style="color: rgba(255,255,255,0.8); font-weight: 500;">Retorno de Inversión</p>
+                    </div>
+                    <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">300%</p>
+                    <p
+                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_upward</span> Promedio
+                        anual
+                    </p>
+                </div>
+                <!-- Stat 2 -->
+                <div class="p-6 rounded-xl animate-on-scroll"
+                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <p style="color: rgba(255,255,255,0.8); font-weight: 500;">Eficiencia Operativa</p>
+                    </div>
+                    <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">+40h</p>
+                    <p
+                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span> Ahorradas
+                        por semana
+                    </p>
+                </div>
+                <!-- Stat 3 -->
+                <div class="p-6 rounded-xl animate-on-scroll"
+                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
+                            <span class="material-symbols-outlined">groups</span>
+                        </div>
+                        <p style="color: rgba(255,255,255,0.8); font-weight: 500;">Clientes Satisfechos</p>
+                    </div>
+                    <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">50+</p>
+                    <p
+                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">star</span> Proyectos
+                        completados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20">
+        <div class="container-wide">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Nuestros Servicios Tecnológicos</h2>
+                    <p class="text-muted" style="font-size: 1.1rem; max-width: 600px;">Soluciones integrales diseñadas
+                        para la era digital, desde la infraestructura hasta la conversión.</p>
+                </div>
+                <button class="btn"
+                    style="color: var(--brand-primary); background: transparent; padding: 0; display: flex; align-items: center; gap: 0.5rem; font-weight: 700;">
+                    Ver todos <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="card card-hover rounded-xl overflow-hidden animate-on-scroll"
+                    style="background: var(--surface-dark); border: 1px solid rgba(255,255,255,0.05);">
+                    <div class="grid sm:grid-cols-5 h-full">
+                        <div class="sm:col-span-2"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXggt61wXPM9lmT_qvZ7S_dbhv_FqHJTeL0l0RXF6SGsjD-F4jpl7T_wqK1qauzFLNB_4GFGzqJKGxBXwsRH-xS__EgP308CsNJKlaX6t2hp5_lsO3_4Wu8zaAd4yui3ttQ-ni7YmNpZVtsKiCjZ9UT5NyrkkUR7E30yW3SAwyqMm3mPr_lgQKm-YXMCtNAlwOtKODcXY7lEfFu6AkwnD9tdN5MD3vDmSGfYOSLBVmi1WN_wiZFpCIaes-rqmwh2TAtr_IahwhD24'); background-size: cover; background-position: center; min-height: 200px;">
+                        </div>
+                        <div class="p-6 sm:col-span-3 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 style="font-size: 1.25rem; font-weight: 700;">Implementación de IA</h3>
+                                    <span class="material-symbols-outlined text-muted">smart_toy</span>
+                                </div>
+                                <p class="text-muted text-sm mb-4">Optimización de flujos de trabajo mediante chatbots
+                                    inteligentes y algoritmos predictivos.</p>
+                            </div>
+                            <div class="flex gap-2 flex-wrap">
+                                <span
+                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Python</span>
+                                <span
+                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card card-hover rounded-xl overflow-hidden animate-on-scroll"
+                    style="background: var(--surface-dark); border: 1px solid rgba(255,255,255,0.05);">
+                    <div class="grid sm:grid-cols-5 h-full">
+                        <div class="sm:col-span-2"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkNAgP-xptgldeReLfvQ754HSwTXAEtuJsEgl095Z396Ue3EsM5WPDKfoI5i4rCVgFeiScv_W-6p9TBgyRkwIPCxryKOoHX9Kt4DdojKNTVjt-phrkL-4UknbaQ5iEz0jT_43F5HTodSn4hufnPrCqwbMCXNTenAUN2RN2GTO2gQoQdS0Zd5PElRBNXBS96wJc2zUi32jjb2sBKeQQ1-76j6nZSboz0bNAVByZQiJRj2owSjaMppLffyRv5s1RM-kignzwBVUtCJU'); background-size: cover; background-position: center; min-height: 200px;">
+                        </div>
+                        <div class="p-6 sm:col-span-3 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 style="font-size: 1.25rem; font-weight: 700;">Marketing Data-Driven</h3>
+                                    <span class="material-symbols-outlined text-muted">analytics</span>
+                                </div>
+                                <p class="text-muted text-sm mb-4">Estrategias de crecimiento basadas en datos reales y
+                                    automatización.</p>
+                            </div>
+                            <div class="flex gap-2 flex-wrap">
+                                <span
+                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Google
+                                    Ads</span>
+                                <span
+                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Audit -->
+    <section id="audit" class="py-20">
+        <div class="container-wide">
+            <div class="rounded-xl overflow-hidden relative"
+                style="background: var(--brand-primary); color: var(--bg-dark);">
+                <div
+                    style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px; opacity: 0.1; position: absolute; inset: 0;">
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8 p-12 items-center relative z-10">
+                    <div class="lg:col-span-2">
+                        <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem;">¿Listo
+                            para escalar?</h2>
+                        <p style="font-size: 1.25rem; font-weight: 500; opacity: 0.9;">Agenda una sesión estratégica de
+                            30 minutos y descubre cómo la IA puede optimizar tu negocio hoy mismo.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary w-full"
+                            style="background: var(--bg-dark); color: white; height: 3.5rem; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">Agendar
+                            Auditoría Gratis</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+        <div class="container-wide">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined"
+                            style="color: var(--brand-primary); font-size: 2rem;">dataset</span>
+                        <span style="font-weight: 700; font-size: 1.25rem;">Jesús Palafox</span>
+                    </div>
+                    <p class="text-muted text-sm">Innovación tecnológica aplicada a Logística, Real Estate, Marketing y
+                        Gastronomía.</p>
+                </div>
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Servicios</h4>
+                    <ul class="text-muted text-sm text-col-container" style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Consultoría IA</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Desarrollo Web</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Automatización</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center text-muted text-xs">
+                © 2026 Jesús Palafox. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

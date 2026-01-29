@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jesús Palafox - Inicio (Estilo Morgan)</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#84cc16","primary-hover": "#65a30d",
+                        "accent": "#13b6ec","background-light": "#ffffff",
+                        "background-soft": "#f3f4f6",
+                        "text-dark": "#1f2937",
+                        "text-muted": "#6b7280",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'glow': '0 0 20px rgba(132, 204, 22, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-outline {
+                -webkit-text-stroke: 1px #e5e7eb;
+                color: transparent;
+            }
+            .floating-card {
+                @apply bg-white rounded-2xl p-4 shadow-soft flex items-center gap-4 transition-transform duration-300 hover:-translate-y-1 cursor-pointer border border-gray-100;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-text-dark min-h-screen flex flex-col selection:bg-primary selection:text-white">
+<header class="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-extrabold tracking-tighter">Jesús<span class="text-primary">.</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-text-dark hover:text-primary transition-colors relative group" href="#">
+                        Inicio
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-primary transition-all group-hover:w-full group-hover:left-0"></span>
+</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#about">Sobre mí</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#services">Servicios</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#contact">Contacto</a>
+</nav>
+<div class="hidden md:block">
+<button class="bg-primary hover:bg-primary-hover text-white text-sm font-bold py-2.5 px-6 rounded-full shadow-lg shadow-primary/30 transition-all hover:scale-105">
+                        Hablemos
+                    </button>
+</div>
+<button class="md:hidden p-2 text-text-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col pt-20">
+<section class="relative w-full overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 min-h-[calc(100vh-80px)] flex items-center">
+<div class="absolute top-1/4 left-10 w-24 h-24 bg-gray-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+<div class="absolute top-1/3 right-10 w-32 h-32 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+<div class="absolute -bottom-8 left-1/2 w-96 h-96 bg-gray-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-4 space-y-8 order-2 lg:order-1 text-center lg:text-left mt-8 lg:mt-0">
+<div>
+<p class="text-xl font-medium text-text-muted mb-2">Hola, soy</p>
+<h1 class="text-6xl sm:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-text-dark leading-none mb-6 italic">
+                                JESÚS
+                            </h1>
+<p class="text-base text-text-muted leading-relaxed max-w-md mx-auto lg:mx-0">
+                                Emprendedor con más de 12 años diseñando estrategias, construyendo negocios y conectando productos globales con personas.
+                            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+<div class="bg-white border border-gray-200 rounded-full py-2 px-5 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span class="text-sm font-medium text-text-dark">hello@jesuspalafox.com</span>
+</div>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-text-dark hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-text-dark hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">work</span>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 relative h-[500px] lg:h-[700px] flex items-end justify-center order-1 lg:order-2">
+<div class="absolute top-10 lg:top-20 left-1/2 -translate-x-1/2 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] bg-white rounded-full shadow-2xl z-0 border-[16px] border-gray-50"></div>
+<div class="relative z-10 h-full w-full flex items-end justify-center">
+<img alt="Jesús Palafox Casual" class="h-full w-auto object-cover object-top mask-image-gradient rounded-b-full lg:rounded-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnMOTk4MeZ_qw73281Gwc-MWCY_pA2VpylrAay0bWwxoqsFMR0VDzkYvhNmz5BkwlRm0p91xqfGUb-sXTUu6fJBPMCOMf1knQWg4ssyuBD6PHgSHYqieyw6ZwE1mti4g7i74iPB5X20dAyWu9dCeDPtt7FyRWzGZEz8xorfBVnUvndR4QgWqWjpT8YQNKFDKExpeQNX3oP47EvRdsUC6gULoXFW3GK0DlqoCR0afr6BHrIbv0bdeIzx1W8Y_9btBWYl6x-P9k2a58" style="mask-image: linear-gradient(to bottom, black 85%, transparent 100%);"/>
+</div>
+</div>
+<div class="lg:col-span-4 relative h-auto lg:h-[600px] flex flex-col justify-center gap-6 order-3 lg:order-3 px-4 lg:px-0">
+<div class="floating-card lg:translate-x-0 lg:ml-auto w-full max-w-xs group">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-text-dark text-sm">Logística</h3>
+<p class="text-xs text-text-muted">OnRoute Global</p>
+</div>
+<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</div>
+</div>
+<div class="floating-card lg:-translate-x-8 lg:ml-auto w-full max-w-xs group">
+<div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center text-teal-500 group-hover:bg-teal-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">holiday_village</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-text-dark text-sm">Bienes Raíces</h3>
+<p class="text-xs text-text-muted">Landlord Cove</p>
+</div>
+<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</div>
+</div>
+<div class="floating-card lg:translate-x-0 lg:ml-auto w-full max-w-xs group">
+<div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">auto_graph</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-text-dark text-sm">Marketing e IA</h3>
+<p class="text-xs text-text-muted">Estrategia Digital</p>
+</div>
+<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</div>
+</div>
+<div class="hidden lg:flex absolute bottom-10 right-10 bg-white p-3 rounded-2xl shadow-lg items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+<div class="bg-primary/10 text-primary p-2 rounded-lg font-bold text-xl">12+</div>
+<div class="text-xs font-semibold leading-tight text-text-muted">Años de<br/>Experiencia</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-24" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4">
+                        Ecosistema Profesional
+                    </span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-text-dark mb-6">Mis Pilares</h2>
+<p class="text-lg text-text-muted">
+                        Cuatro áreas distintas conectadas por un compromiso singular con la excelencia y la innovación.
+                    </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2">
+<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 text-text-dark group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">airport_shuttle</span>
+</div>
+<h4 class="text-xl font-bold text-text-dark mb-3">Turismo y Logística</h4>
+<p class="text-text-muted text-sm mb-6 leading-relaxed">
+                            Agencia enfocada en transporte público/privado y logística de entregas como servicio adicional.
+                        </p>
+<a class="inline-flex items-center text-sm font-bold text-primary group-hover:translate-x-1 transition-transform" href="#">
+                            Ver Detalles <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2">
+<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 text-text-dark group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">holiday_village</span>
+</div>
+<h4 class="text-xl font-bold text-text-dark mb-3">Bienes Raíces</h4>
+<p class="text-text-muted text-sm mb-6 leading-relaxed">
+                            Inversiones premium en el corazón de Tulum y Cancún con Landlord Cove.
+                        </p>
+<a class="inline-flex items-center text-sm font-bold text-primary group-hover:translate-x-1 transition-transform" href="#">
+                            Ver Propiedades <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2">
+<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 text-text-dark group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">auto_graph</span>
+</div>
+<h4 class="text-xl font-bold text-text-dark mb-3">Marketing e IA</h4>
+<p class="text-text-muted text-sm mb-6 leading-relaxed">
+                            Estrategias basadas en datos para el crecimiento moderno y la automatización.
+                        </p>
+<a class="inline-flex items-center text-sm font-bold text-primary group-hover:translate-x-1 transition-transform" href="#">
+                            Ver Estrategia <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2">
+<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 text-text-dark group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+</div>
+<h4 class="text-xl font-bold text-text-dark mb-3">Gastronomía</h4>
+<p class="text-text-muted text-sm mb-6 leading-relaxed">
+                            Experiencias culinarias que resuenan con sabores auténticos en Cocoati.
+                        </p>
+<a class="inline-flex items-center text-sm font-bold text-primary group-hover:translate-x-1 transition-transform" href="#">
+                            Descubrir Menú <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden my-8 rounded-3xl mx-auto max-w-[95%]">
+<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBucagrqzMlVi1fFudXHBUzJvbmVzreU2h75OORhfo2HEbnJ_DU1BnRgOoCHKrW8n3h84U9J60LBbzAPwQFXuxa7MZaegie193QuBaw_JTbHRByB-7-mT4B2Tb9TNGefLtd6z7MsU3BGobOU6LDYXRg4Br_7m0hGZeXLVu3FzEhRa08iCEhyo8WPsqFv8QV4gaZTJweDNqBayFejxxtaFlDyy_hDADP4ySSA49eg5uJZPChcSkO-rcDX7XjtDUcDSxctXi8DJ4cWrk');">
+</div>
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+<span class="inline-block py-1 px-4 rounded-full bg-white text-black text-xs font-bold uppercase tracking-wider mb-6">
+                    Base en México
+                </span>
+<h2 class="text-4xl sm:text-6xl font-extrabold text-white mb-6 drop-shadow-lg tracking-tight">
+                    Arraigado en la Riviera Maya
+                </h2>
+<p class="text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light">
+                    Desde los centros logísticos hasta las playas serenas de Tulum, mi trabajo se inspira en la energía vibrante de la región.
+                </p>
+<button class="bg-primary hover:bg-primary-hover text-white font-bold py-4 px-10 rounded-full transition-all shadow-glow hover:scale-105">
+                    Explorar la Región
+                </button>
+</div>
+</section>
+<section class="bg-background-soft py-24" id="contact">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-4xl font-extrabold text-text-dark mb-6">¿Listo para colaborar?</h2>
+<p class="text-text-muted mb-10 text-xl max-w-2xl mx-auto">
+                    Ya sea que necesites soluciones de cadena de suministro, oportunidades de inversión o crecimiento digital, construyamos algo grandioso juntos.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary hover:bg-primary-hover text-white font-bold py-4 px-10 rounded-full shadow-lg shadow-primary/30 transition-all hover:-translate-y-1">
+                        Iniciar Conversación
+                    </button>
+<button class="bg-white border border-gray-200 text-text-dark hover:bg-gray-50 font-bold py-4 px-10 rounded-full transition-colors hover:shadow-md">
+                        Descargar CV
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-2xl font-bold text-text-dark">Jesús Palafox</span>
+</div>
+<p class="text-text-muted text-sm leading-relaxed mb-6">
+                        Conectando industrias a través de la innovación, estrategia y excelencia en la ejecución.
+                    </p>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-text-dark mb-6">Enlaces Rápidos</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Mí</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Servicios</a></li>
+<li><a class="hover:text-primary transition-colors" href="#contact">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-dark mb-6">Emprendimientos</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<a class="hover:text-primary transition-colors" href="#">OnRoute Logistics</a>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<a class="hover:text-primary transition-colors" href="#">Landlord Cove</a>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<a class="hover:text-primary transition-colors" href="#">Cocoati Gastronomy</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-dark mb-6">Contacto</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg mt-0.5 text-primary">location_on</span>
+<span>Cancún, México</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary">mail</span>
+<a class="hover:text-primary transition-colors" href="mailto:hello@jesuspalafox.com">hello@jesuspalafox.com</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-100 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-400">
+                    © 2023 Jesús Palafox. Todos los derechos reservados.
+                </p>
+<div class="flex gap-6 text-xs text-gray-400">
+<a class="hover:text-text-dark" href="#">Política de Privacidad</a>
+<a class="hover:text-text-dark" href="#">Términos de Servicio</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jesús Palafox | Emprendedor & Estratega</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme-default">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="brand">Jesús<span style="color:var(--brand-primary)">.</span></a>
+
+            <div class="nav-links hidden md:flex items-center gap-4">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="trayectoria.html">Trayectoria</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html" class="btn-contact">Hablemos</a>
+            </div>
+
+            <button class="mobile-menu-btn md:hidden">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="brand">Menú</span>
+            <button class="close-menu material-symbols-outlined">close</button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="text-xl font-bold">Inicio</a>
+            <a href="onroute.html" class="text-xl">Logística (OnRoute)</a>
+            <a href="landlord.html" class="text-xl">Bienes Raíces</a>
+            <a href="cocoati.html" class="text-xl">Gastronomía</a>
+            <a href="marketing.html" class="text-xl">Marketing & IA</a>
+            <a href="trayectoria.html" class="text-xl">Trayectoria</a>
+            <a href="contacto.html" class="text-xl text-primary">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding-top: 140px; padding-bottom: 80px; overflow: hidden; position: relative;">
+        <div class="container grid md:grid-cols-2 gap-12 items-center">
+            <div class="hero-text animate-on-scroll">
+                <p class="text-muted" style="font-weight: 500; font-size: 1.1rem; margin-bottom: 1rem;">Hola, soy</p>
+                <h1
+                    style="font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; font-family: var(--font-serif); font-style: italic;">
+                    JESÚS <br><span
+                        style="font-style: normal; font-family: var(--font-display); color: var(--text-main);">PALAFOX</span>
+                </h1>
+                <p class="text-muted" style="font-size: 1.1rem; max-width: 500px; margin-bottom: 2rem;">
+                    Emprendedor con más de 12 años diseñando estrategias, construyendo negocios y conectando productos
+                    globales con personas.
+                </p>
+                <div class="flex gap-4">
+                    <a href="contacto.html" class="btn btn-primary">Iniciar Conversación</a>
+                    <a href="trayectoria.html" class="btn btn-secondary">Ver Trayectoria</a>
+                </div>
+            </div>
+            <div class="hero-image relative animate-on-scroll">
+                <div class="absolute inset-0 bg-soft rounded-full"
+                    style="transform: scale(0.9) translate(20px, 20px); z-index: -1;"></div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnMOTk4MeZ_qw73281Gwc-MWCY_pA2VpylrAay0bWwxoqsFMR0VDzkYvhNmz5BkwlRm0p91xqfGUb-sXTUu6fJBPMCOMf1knQWg4ssyuBD6PHgSHYqieyw6ZwE1mti4g7i74iPB5X20dAyWu9dCeDPtt7FyRWzGZEz8xorfBVnUvndR4QgWqWjpT8YQNKFDKExpeQNX3oP47EvRdsUC6gULoXFW3GK0DlqoCR0afr6BHrIbv0bdeIzx1W8Y_9btBWYl6x-P9k2a58"
+                    alt="Jesús Palafox"
+                    style="border-radius: 20px; width: 100%; max-width: 450px; margin: 0 auto; box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section class="pillars" style="padding: 100px 0; background-color: var(--bg-soft);">
+        <div class="container">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span
+                    style="background: rgba(132, 204, 22, 0.1); color: var(--brand-primary); padding: 0.5rem 1rem; border-radius: 99px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Ecosistema
+                    Profesional</span>
+                <h2 style="font-size: 2.5rem; margin-top: 1.5rem; margin-bottom: 1rem;">Mis Pilares de Negocio</h2>
+                <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Cuatro áreas distintas conectadas por un
+                    compromiso singular con la excelencia y la innovación.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Logistics Card -->
+                <a href="onroute.html" class="card card-hover animate-on-scroll"
+                    style="background: white; padding: 2rem; border-radius: 1.5rem; text-align: left; border: 1px solid rgba(0,0,0,0.05);">
+                    <div
+                        style="width: 3rem; height: 3rem; background: #f0fdf4; color: var(--color-onroute-dark); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <span class="material-symbols-outlined">local_shipping</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Logística & Turismo</h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Soluciones de transporte
+                        premium con OnRoute Global.</p>
+                    <span
+                        style="color: var(--brand-primary); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">Explorar
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_forward</span></span>
+                </a>
+
+                <!-- Real Estate Card -->
+                <a href="landlord.html" class="card card-hover animate-on-scroll"
+                    style="background: white; padding: 2rem; border-radius: 1.5rem; text-align: left; border: 1px solid rgba(0,0,0,0.05);">
+                    <div
+                        style="width: 3rem; height: 3rem; background: #f7fee7; color: var(--color-landlord-dark); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <span class="material-symbols-outlined">holiday_village</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Bienes Raíces</h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Inversiones y gestión de
+                        propiedades con Landlord Cove.</p>
+                    <span
+                        style="color: var(--brand-primary); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">Ver
+                        Propiedades <span class="material-symbols-outlined"
+                            style="font-size: 1rem;">arrow_forward</span></span>
+                </a>
+
+                <!-- Marketing Card -->
+                <a href="marketing.html" class="card card-hover animate-on-scroll"
+                    style="background: #111; color: white; padding: 2rem; border-radius: 1.5rem; text-align: left;">
+                    <div
+                        style="width: 3rem; height: 3rem; background: rgba(255,255,255,0.1); color: var(--color-marketing); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <span class="material-symbols-outlined">auto_graph</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Marketing & IA</h3>
+                    <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 1.5rem;">Estrategias data-driven y
+                        automatización inteligente.</p>
+                    <span
+                        style="color: var(--color-marketing); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">Ver
+                        Estrategia <span class="material-symbols-outlined"
+                            style="font-size: 1rem;">arrow_forward</span></span>
+                </a>
+
+                <!-- Gastronomy Card -->
+                <a href="cocoati.html" class="card card-hover animate-on-scroll"
+                    style="background: white; padding: 2rem; border-radius: 1.5rem; text-align: left; border: 1px solid rgba(0,0,0,0.05);">
+                    <div
+                        style="width: 3rem; height: 3rem; background: #fff7ed; color: var(--color-cocoati); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <span class="material-symbols-outlined">restaurant_menu</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Gastronomía</h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Experiencias culinarias
+                        auténticas en Cocoati Café.</p>
+                    <span
+                        style="color: var(--brand-primary); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">Descubrir
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_forward</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col" style="max-width: 300px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Jesús Palafox</h3>
+                <p class="text-muted" style="font-size: 0.9rem;">
+                    Conectando industrias a través de la innovación, estrategia y excelencia en la ejecución.
+                </p>
+                <div class="flex gap-4" style="margin-top: 1.5rem;">
+                    <a href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresas</h4>
+                <ul>
+                    <li><a href="onroute.html">OnRoute Logistics</a></li>
+                    <li><a href="landlord.html">Landlord Cove</a></li>
+                    <li><a href="cocoati.html">Cocoati Café</a></li>
+                    <li><a href="marketing.html">Marketing IA</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="trayectoria.html">Trayectoria</a></li>
+                    <li><a href="proyectos.html">Proximos Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Cancún, México</li>
+                    <li><a href="mailto:hello@jesuspalafox.com">hello@jesuspalafox.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container"
+            style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.05); text-align: center; color: var(--text-muted); font-size: 0.8rem;">
+            &copy; 2026 Jesús Palafox. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cocoati Café Tulum | Jesús Palafox</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body.theme-cocoati {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            --brand-primary: #f29640;
+            background-color: #fffbf7;
+            /* Warm cream */
+        }
+
+        .text-cocoati {
+            color: #032613;
+        }
+    </style>
+</head>
+
+<body class="theme-cocoati">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="brand">Jesús<span style="color:var(--brand-primary)">.</span></a>
+            <div class="nav-links hidden md:flex items-center gap-4">
+                <a href="index.html">Inicio</a>
+                <a href="onroute.html">Logística</a>
+                <a href="landlord.html">Bienes Raíces</a>
+                <a href="cocoati.html" class="active">Gastronomía</a>
+                <a href="marketing.html">Marketing</a>
+                <a href="contacto.html" class="btn-contact">Visítanos</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+    <!-- Mobile Menu (Copy) -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="brand">Cocoati Café</span>
+            <button class="close-menu material-symbols-outlined">close</button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="text-xl">Inicio</a>
+            <a href="onroute.html" class="text-xl">Logística</a>
+            <a href="landlord.html" class="text-xl">Bienes Raíces</a>
+            <a href="cocoati.html" class="text-xl font-bold">Gastronomía</a>
+            <a href="marketing.html" class="text-xl">Marketing & IA</a>
+            <a href="contacto.html" class="text-xl text-primary">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center text-center text-white overflow-hidden"
+        style="min-height: 500px;">
+        <div class="absolute inset-0 z-0">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjds6xao3zVGOcnE4W9FQv7S0Tqu7WK-ZgbHHLD9Bz2VH4Lk2k62BnYSSzXO1uB8si4KaQl9R49QeixvkeMhZ-QeciR7g2JXMmkE2UohKbtbDsi4Bf5v-rYrqbLd-IpIYuHZ8lL2-ZZt3c-k8XrGuEWllwSw3IVdhPPq2DwwWoRSooJOGGUx1Ocm_1PM6uc0lsnDLk-AQJh-pSEOuVldzqhPqF3EyZztCgnu4uZ5n4JqhNGNmHpPsp_6vPSkw7MXzQHB1brVWOYKI"
+                alt="Cocoati Cafe Atmosphere" style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(rgba(3, 38, 19, 0.4), rgba(3, 38, 19, 0.6));">
+            </div>
+        </div>
+        <div class="container relative z-10 animate-on-scroll">
+            <span
+                style="background: white; color: var(--brand-primary); padding: 5px 15px; border-radius: 99px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Proyecto
+                Activo</span>
+            <h1 style="font-size: 3.5rem; margin: 1.5rem 0; font-weight: 800;">Cocoati Café Tulum</h1>
+            <p
+                style="font-size: 1.25rem; font-weight: 500; max-width: 700px; margin: 0 auto 2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                Un oasis gastronómico donde los sabores indulgentes se encuentran con la vibra selvática.
+            </p>
+            <a href="#menu" class="btn btn-primary">Ver Menú</a>
+        </div>
+    </header>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="py-20" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h2 style="font-size: 2.5rem; color: #032613; margin-bottom: 1rem;">Favoritos del Menú</h2>
+                <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Una selección de nuestros platillos más
+                    fotogénicos y deliciosos.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="card card-hover animate-on-scroll"
+                    style="background: white; border-radius: 1.5rem; overflow: hidden; box-shadow: var(--shadow-sm);">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzlLO_0m5seku9XdkRzHa9iovotG1PUPcnmoEdj5TGqPmznlMM4CDRE3l4vDOVHVeS7osJJqUCPS_zPNgEJlQfWIgxDbAeQJOdqG7o-zNyehk2awvplMQCgR_P4nZDrSh627js73xylAxuJ8TTiXtUEzwLtzL2tPah_GfHFh36TdeAmlS2NdCy8o8nP92NYKBP-bCLcDlOj1aonmOzgRVERulwOFPNo-Fso_Ps6_RB7iozqW-Te1jLRmkxumxagfLWRrMqQhnnGnQ"
+                        alt="Pancakes" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 style="font-size: 1.25rem;">Hotcakes Berries</h3>
+                            <span
+                                style="background: var(--brand-primary); color: #032613; font-weight: 700; padding: 2px 10px; border-radius: 99px; font-size: 0.8rem;">$180</span>
+                        </div>
+                        <p class="text-muted">Con compota casera y crema batida.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="card card-hover animate-on-scroll"
+                    style="background: white; border-radius: 1.5rem; overflow: hidden; box-shadow: var(--shadow-sm);">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLCgVVX1vSSkozF6z0Ar1PTRBu2_yNjiNtTB_4fKw2_9ZMAgoL6Rxz63dSSGMcZ1yrWcUvfpzld7X2Vnq8XkZpFd-uGhEFoRR_BB6KXctz64FRChEe0mD8AghwYyVS4EHqNFF0EWm4oMCNSpCOVW6lg1pOsEh9caPMDfRnn-I7b8CFGM6CdQYv1y850oWeqqHclXFE1VMUl_fwWDV51sN83cmF6ok1Zm_sPcLW-84I6upAyJEPhG6YEFskD49JkcCVNrkGEk-YUS8"
+                        alt="Waffles" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 style="font-size: 1.25rem;">Waffles Belgas</h3>
+                            <span
+                                style="background: var(--brand-primary); color: #032613; font-weight: 700; padding: 2px 10px; border-radius: 99px; font-size: 0.8rem;">$160</span>
+                        </div>
+                        <p class="text-muted">Crujientes por fuera, suaves por dentro.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="card card-hover animate-on-scroll"
+                    style="background: white; border-radius: 1.5rem; overflow: hidden; box-shadow: var(--shadow-sm);">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKIDKQNlD_YMujF2E61hhpL6TYOYBro5ksAA_YBWVxdoH2OmO6eAaafWnVrSE184SB1KTWhr5zAAOIXxiPF1XJG1L4Fq6M9OGXBfOHvv907oiZulGKMl93z6K0zP1jXrUrjLXeVjxS1TsnOSD0RhCYPrfjRlNok_FSyKVwMS6CgJbFEsJ1L3gMVO4y6TaeHf4yQBDhu4NMVOY7I5W78BVBZZWy3BgQUpFFkOGF1l-OY2gWusRXvOTE7S2-qaA6aw0CipkXYLtmI8o"
+                        alt="Frappe" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 style="font-size: 1.25rem;">Frappé Moka</h3>
+                            <span
+                                style="background: var(--brand-primary); color: #032613; font-weight: 700; padding: 2px 10px; border-radius: 99px; font-size: 0.8rem;">$95</span>
+                        </div>
+                        <p class="text-muted">Café de altura y chocolate oaxaqueño.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="btn btn-secondary">Descargar Menú PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="py-20" style="background: #e5e7eb;">
+        <div
+            class="container grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl overflow-hidden shadow-lg p-0">
+            <div style="padding: 3rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Ubicación Estratégica</h3>
+                <p class="text-muted" style="margin-bottom: 2rem;">Av. Coba Sur, Tulum Centro, 77760 Tulum, Q.R.
+                    <br>Lunes a Domingo: 8:00 AM - 10:00 PM</p>
+                <div class="flex gap-4">
+                    <button class="btn btn-primary" style="color: #032613;">Cómo llegar</button>
+                    <a href="mailto:hola@cocoati.mx" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div style="height: 100%; min-height: 400px; background: #ddd;">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbZ3pAgBNFK9--2j1vt_yU_ROiu6FnG8QByvxOyAGMAI7TumA9uU83xWkcQ0MNCe9Cwb4CTSyerkxT0RICy5V4KJupMD4_Q-w5aF0CePZGGVhYo8u-JBzQNjc8xYX3fZcvZsyXRUe31jKxjbq1vcQzk_64NqJQz91LSpCFHu0YV_FcgaIVc4Eh0RQrXxgADa5Rq-0jeGBJhCqyS2b_tWxqf7sOZrE3xfi5-GKY2Y_Loh_ct5m6SfJHoUpZwECuMiRowjQEHVbYgqw"
+                    alt="Map" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center text-muted" style="padding-top: 2rem; border-top: 1px solid #ddd;">
+            &copy; 2026 Cocoati Café Tulum.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

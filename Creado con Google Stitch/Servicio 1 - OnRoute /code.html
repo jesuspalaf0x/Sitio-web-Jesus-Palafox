@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OnRoute Logística - Jesús Palafox</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8feb2d", // Lime green
+                        "heading": "#032613", // Deep forest green
+                        "background-light": "#ffffff",
+                        "background-dark": "#192111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light text-slate-800 font-display">
+<!-- Header -->
+<div class="relative flex w-full flex-col bg-white border-b border-[#f2f4f0] sticky top-0 z-50">
+<header class="flex items-center justify-between whitespace-nowrap px-10 py-4 max-w-[1280px] mx-auto w-full">
+<div class="flex items-center gap-4 text-heading">
+<div class="size-8 flex items-center justify-center bg-heading rounded-lg text-primary">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<h2 class="text-heading text-lg font-bold leading-tight tracking-[-0.015em]">Jesús Palafox</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center hidden md:flex">
+<div class="flex items-center gap-9">
+<a class="text-heading text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Proyectos</a>
+<a class="text-heading text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-heading text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Sobre Mí</a>
+<a class="text-heading text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contacto</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-heading text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Reservar ahora</span>
+</button>
+</div>
+<button class="md:hidden text-heading">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+</div>
+<!-- Hero Section -->
+<div class="relative w-full">
+<div class="max-w-[1280px] mx-auto p-4 md:p-10">
+<div class="relative flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-center justify-center p-8 md:p-16 overflow-hidden" data-alt="Modern luxury van parked near a tropical beach resort in Tulum at sunset" style='background-image: linear-gradient(rgba(3, 38, 19, 0.4) 0%, rgba(3, 38, 19, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3lzz-dNRxHv6DMxTxs7dtlWbUNvw6JHUP_WLiRmF4pX3GRTrgYhhP5D-Kel6h4vM_O-IAMBU76hbroA3F4bABzThnSmT0J3MTto-BdICtyBTU8on8fpjcAIuWpqW3FJgcp5AyhkjWUpZR8Nh2r5yBB3z5wtEIk15n8USqNZgTmVN61Bw-SBwB8xm_Yfuph88Rmxgko1-Y15rWHCyCtgv9Avvq7l9anNhrOcvmrS7_Hlgdc-7SgrhpUT5sE9eS6MtzzTOjiveqAXo");'>
+<div class="flex flex-col gap-4 text-center max-w-3xl z-10">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-xs font-medium uppercase tracking-wider w-fit mx-auto">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+                        Proyecto Destacado
+                    </div>
+<h1 class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                        OnRoute: Logística Premium
+                    </h1>
+<p class="text-white/90 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto">
+                        Transporte ejecutivo y logística privada conectando el Aeropuerto de Cancún, Zona Hotelera, Tulum y Chichén Itzá con máxima seguridad y confort.
+                    </p>
+</div>
+<div class="flex gap-4 z-10 mt-4 flex-col sm:flex-row">
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-heading text-base font-bold hover:scale-105 transition-transform">
+                        Ver Disponibilidad
+                    </button>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-white/10 backdrop-blur-md border border-white/30 text-white text-base font-bold hover:bg-white/20 transition-colors">
+                        Descargar Brochure
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Container -->
+<div class="max-w-[960px] mx-auto px-4 md:px-0 py-12">
+<!-- Ficha Técnica & Intro Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+<!-- Narrative Column -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<h2 class="text-heading tracking-tight text-3xl md:text-4xl font-bold leading-tight">
+                    Redefiniendo el transporte en la Riviera Maya
+                </h2>
+<div class="w-20 h-1.5 bg-primary rounded-full"></div>
+<p class="text-slate-600 text-lg leading-relaxed">
+                    OnRoute nació de la necesidad de ofrecer un servicio de transporte que combinara la puntualidad suiza con la hospitalidad mexicana. Nos especializamos en logística para grupos corporativos, bodas y viajeros exigentes que valoran su tiempo y seguridad.
+                </p>
+<p class="text-slate-600 text-lg leading-relaxed">
+                    Nuestra flota moderna y nuestros conductores bilingües certificados garantizan que cada trayecto, desde la recepción en el aeropuerto hasta su destino final en Tulum o Playa del Carmen, sea una experiencia de primera clase.
+                </p>
+<!-- Service Highlights Icons -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+<div class="flex flex-col gap-2">
+<div class="size-10 rounded-full bg-green-50 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined">wifi</span>
+</div>
+<h4 class="font-bold text-heading text-sm">Wi-Fi 5G</h4>
+</div>
+<div class="flex flex-col gap-2">
+<div class="size-10 rounded-full bg-green-50 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<h4 class="font-bold text-heading text-sm">Bilingüe</h4>
+</div>
+<div class="flex flex-col gap-2">
+<div class="size-10 rounded-full bg-green-50 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined">ac_unit</span>
+</div>
+<h4 class="font-bold text-heading text-sm">Climatizado</h4>
+</div>
+<div class="flex flex-col gap-2">
+<div class="size-10 rounded-full bg-green-50 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h4 class="font-bold text-heading text-sm">Seguro</h4>
+</div>
+</div>
+</div>
+<!-- Technical Sheet Column -->
+<div class="lg:col-span-5">
+<div class="bg-slate-50 rounded-xl p-8 border border-slate-100 h-full">
+<h3 class="text-heading text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">text_snippet</span>
+                        Ficha Técnica
+                    </h3>
+<div class="flex flex-col gap-6">
+<div class="border-b border-slate-200 pb-4">
+<p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Rutas Principales</p>
+<p class="text-heading font-medium">Aeropuerto Cancún, Zona Hotelera, Tulum, Chichén Itzá</p>
+</div>
+<div class="border-b border-slate-200 pb-4">
+<p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Flota Ejecutiva</p>
+<p class="text-heading font-medium">Mercedes Benz Sprinter, Suburban High Country, Tesla Model X</p>
+</div>
+<div class="border-b border-slate-200 pb-4">
+<p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Capacidad</p>
+<p class="text-heading font-medium">Grupos desde 1 hasta 18 pasajeros por unidad</p>
+</div>
+<div>
+<p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Disponibilidad</p>
+<p class="text-heading font-medium flex items-center gap-2">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                Servicio 24/7
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Fleet Gallery -->
+<div class="mb-20">
+<h2 class="text-heading tracking-tight text-2xl md:text-3xl font-bold leading-tight mb-8">Nuestra Flota</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="group relative overflow-hidden rounded-xl h-[320px]">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Interior view of luxury van with leather seats and mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU0AokXUN_3npRi49dh3GkkG__aakagEI1kNG4jZaDjwCtJdToXFfWs4LKHdRUl1Dcmw91w8R7CPs2POdwMoqCiBgRUgDDREhFx1eR9JTSPeYGYssm8K__TvovZax15d6n2hyzl4OW8MsrCZo7F5VDWWoNW4yplRoxjMQmehIGw9dzJUw-8yLGewqvvjcjdWkZkYgl_A-ZUwD7mgNL8ZwsPdfnGk3fDZvwvmo9WZdmfeF2SAQUsiel6MXvxUEb0DY_YZVV_7FzhRA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white font-bold text-lg">Interiores de Lujo</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[320px]">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Black SUV parked in front of modern minimalist concrete architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfaja3q-G_gaY1jldr-w6f6P0blBO4RLnWfG3D7R9BywF5c1yO1MQcVsk-54OKowMed_fRD8zESyO-mOfb8itImUL49eHr6JSpI3u_MFUSKsmcb2gUOtfCQT3P_6rilb50psdTFdd72X8c7uGPZFNualBHFuMkWUk1kExlHMsUrPiXAQShI2ttqwiKJFOy_pMISVwTtwTsxa7tWkKq2BJyx6ORjd7v2puwkCDiJ_m1Y-nASvC-sZ1Uhi2fA9l3l3kUhYA4jdB_W64"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white font-bold text-lg">Servicio SUV Premium</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials -->
+<div class="bg-heading rounded-2xl p-10 md:p-16 text-center relative overflow-hidden mb-20">
+<!-- Decorative circle -->
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-primary opacity-10"></div>
+<div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-40 h-40 rounded-full bg-primary opacity-5"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">format_quote</span>
+<h3 class="text-white text-xl md:text-2xl font-medium leading-relaxed italic mb-8">
+                    "Contratamos a OnRoute para un retiro corporativo en Tulum y la experiencia fue impecable. La puntualidad y la limpieza de las unidades superaron nuestras expectativas."
+                </h3>
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-white mb-3 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional business woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBdGkavAOOy5MWwCKFwXo7gVhaXL_0RTPBudgSIaxp7he-n_ESqNqtPuxtLhnBAjsgCUWHoGtj--QQ5DOIfVtkwWSiDyDksny_-fiO80xGafgPhhz-a47gPVpagSvi_cS4m4p-MFy76r0-jHi7clL4Uv-CLPlDICKa2mf4a8inpz_rY5k5XEhc3OmHIX37rkAUHxIpr9zGKY9tSOr6zz0elj7rVKAqVYSL7L5vRwz6U2Fyb0SD1cQF962p2-TnUUSh-kNmWRMJhkM"/>
+</div>
+<p class="text-primary font-bold">Mariana Torres</p>
+<p class="text-white/60 text-sm">Directora de Operaciones, TechSolutions</p>
+</div>
+</div>
+</div>
+<!-- Final CTA -->
+<div class="flex flex-col items-center justify-center gap-6 py-10 border-t border-slate-100">
+<h2 class="text-heading text-3xl font-bold text-center">¿Listo para su próximo viaje?</h2>
+<p class="text-slate-500 text-center max-w-md">Reserve su transporte hoy mismo y disfrute de la tranquilidad de viajar con profesionales.</p>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 rounded-lg h-12 px-8 bg-primary text-heading text-base font-bold shadow-lg shadow-primary/30 hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined">calendar_month</span>
+                    Agendar Ahora
+                </button>
+<button class="flex items-center gap-2 rounded-lg h-12 px-8 bg-white border border-slate-200 text-heading text-base font-bold hover:bg-slate-50 transition-colors">
+<span class="material-symbols-outlined">call</span>
+                    Contacto
+                </button>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-white border-t border-[#f2f4f0] py-12">
+<div class="max-w-[960px] mx-auto px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-heading">
+<div class="size-6 flex items-center justify-center bg-heading rounded text-primary">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+</div>
+<span class="font-bold text-lg">Jesús Palafox</span>
+</div>
+<p class="text-slate-400 text-sm">© 2023 Todos los derechos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-heading text-sm font-medium" href="#">Logística</a>
+<a class="text-slate-500 hover:text-heading text-sm font-medium" href="#">Bienes Raíces</a>
+<a class="text-slate-500 hover:text-heading text-sm font-medium" href="#">Marketing</a>
+<a class="text-slate-500 hover:text-heading text-sm font-medium" href="#">Gastronomía</a>
+</div>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.3c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
