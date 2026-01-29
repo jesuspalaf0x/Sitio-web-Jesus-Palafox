@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Marketing Digital & IA | Jesús Palafox</title>
 
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;800&family=Noto+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
@@ -14,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        /* Page-specific font overrides */
         h1,
         h2,
         h3,
@@ -25,6 +28,47 @@
         body {
             font-family: 'Noto Sans', sans-serif;
         }
+
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #192210;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2d3a24;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8ff32b;
+        }
+
+        /* Tech tag styles */
+        .tech-tag {
+            font-family: monospace;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Service card hover */
+        .service-card {
+            background: var(--surface-dark);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: rgba(143, 243, 43, 0.3);
+            transform: translateY(-4px);
+        }
     </style>
 </head>
 
@@ -33,8 +77,8 @@
     <nav class="navbar">
         <div class="container-wide flex justify-between items-center">
             <a href="index.html" class="brand" style="color: white; display: flex; align-items: center; gap: 0.5rem;">
-                <span class="material-symbols-outlined" style="color: var(--brand-primary);">dataset</span> Jesús
-                Palafox
+                <span class="material-symbols-outlined" style="color: var(--brand-primary);">dataset</span>
+                <span style="font-weight: 700;">Jesús Palafox</span>
             </a>
             <div class="nav-links hidden md:flex items-center gap-6">
                 <a href="onroute.html" style="color: rgba(255,255,255,0.7);">Logística</a>
@@ -44,18 +88,23 @@
                     & IA</a>
                 <a href="cocoati.html" style="color: rgba(255,255,255,0.7);">Gastronomía</a>
                 <a href="contacto.html" class="btn"
-                    style="background: var(--brand-primary); color: #192210; font-weight: 700; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Contacto</a>
+                    style="background: var(--brand-primary); color: #192210; font-weight: 700; padding: 0.5rem 1.5rem; font-size: 0.9rem; border-radius: 9999px;">Contacto</a>
             </div>
-            <button class="mobile-menu-btn md:hidden" style="color: white;"><span
-                    class="material-symbols-outlined">menu</span></button>
+            <button class="mobile-menu-btn md:hidden" style="color: white;" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
     </nav>
+
     <!-- Mobile Menu -->
     <div class="mobile-overlay"></div>
     <div class="mobile-menu">
         <div class="flex justify-between items-center mb-8">
-            <span class="brand">Marketing & IA</span>
-            <button class="close-menu material-symbols-outlined" style="color: white;">close</button>
+            <span class="brand" style="color: white; font-weight: 700;">Marketing & IA</span>
+            <button class="close-menu" style="background: none; border: none; color: white; cursor: pointer;"
+                aria-label="Cerrar menú">
+                <span class="material-symbols-outlined">close</span>
+            </button>
         </div>
         <div class="flex flex-col gap-4">
             <a href="index.html" class="text-xl" style="color: rgba(255,255,255,0.7);">Inicio</a>
@@ -67,20 +116,19 @@
         </div>
     </div>
 
-
     <!-- Hero Section -->
-    <section class="py-20 lg:py-32 relative overflow-hidden">
+    <section class="py-20 lg:py-32" style="position: relative; overflow: hidden;">
         <div class="container-wide flex flex-col-reverse lg:flex-row gap-16 items-center">
             <!-- Text Content -->
-            <div class="flex-1 relative z-10 animate-on-scroll">
+            <div class="flex-1 animate-on-scroll" style="position: relative; z-index: 10;">
                 <div class="flex items-center gap-2 mb-6"
-                    style="color: var(--brand-primary); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
-                    <span class="material-symbols-outlined" style="font-size: 1.2rem;">auto_awesome</span>
+                    style="color: var(--brand-primary); font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px;">
+                    <span class="material-symbols-outlined" style="font-size: 1.1rem;">auto_awesome</span>
                     <span>Soluciones Data-Driven</span>
                 </div>
 
                 <h1
-                    style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 900; letter-spacing: -0.025em;">
+                    style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 900; letter-spacing: -0.03em;">
                     Marketing Digital <br>
                     <span class="glow-text"
                         style="color: transparent; background-clip: text; -webkit-background-clip: text; background-image: linear-gradient(to right, var(--brand-primary), #16a34a);">
@@ -88,64 +136,64 @@
                 </h1>
 
                 <p class="text-muted"
-                    style="font-size: 1.25rem; font-weight: 300; margin-bottom: 2.5rem; max-width: 600px; line-height: 1.6;">
+                    style="font-size: 1.1rem; font-weight: 300; margin-bottom: 2rem; max-width: 520px; line-height: 1.7;">
                     Transformamos datos en decisiones. Implementamos automatización inteligente y estrategias de
                     optimización para escalar los resultados de tu negocio en tiempo récord.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#audit" class="btn"
-                        style="background: var(--brand-primary); color: #192210; font-weight: 700; box-shadow: 0 0 20px rgba(143,243,43,0.4);">
+                    <a href="#cta" class="btn"
+                        style="background: var(--brand-primary); color: #192210; font-weight: 700; padding: 0.9rem 2rem; border-radius: 9999px; box-shadow: 0 0 25px rgba(143,243,43,0.4); text-align: center;">
                         Solicitar Auditoría
                     </a>
                     <a href="proyectos.html" class="btn"
-                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white;">
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: white; padding: 0.9rem 2rem; border-radius: 9999px; text-align: center;">
                         Ver Casos de Éxito
                     </a>
                 </div>
 
-                <div class="flex items-center gap-6 mt-12 pt-8" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <div class="flex items-center gap-4 mt-10 pt-6" style="border-top: 1px solid rgba(255,255,255,0.1);">
                     <div class="flex -space-x-3">
                         <div class="rounded-full"
-                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Zx9lK_chcV43DbPitPirzMsbfbDHmODpWL0MvSAt_tTTaPCeTJpx5_m2mV8Hx6BaYkfJUNpcjOq-Sn1j_ACuAjlyOBzLO0nxP7dv18quP6tYguXlmSGSwKaXh-9YtAxFxBs0hxdDR2UK0nilMgn7Sep74v25hl8RktSZjoHehHWld4SiG1R8O3AAn-I5tRmSYF5y2Yc-GyvV7QnZcYXIeyav0eFULo4IqmkvE9W56I_56Uj02f8hbrVvlUIct0SbDrQwVdlHS5U'); background-size: cover;">
+                            style="width: 36px; height: 36px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Zx9lK_chcV43DbPitPirzMsbfbDHmODpWL0MvSAt_tTTaPCeTJpx5_m2mV8Hx6BaYkfJUNpcjOq-Sn1j_ACuAjlyOBzLO0nxP7dv18quP6tYguXlmSGSwKaXh-9YtAxFxBs0hxdDR2UK0nilMgn7Sep74v25hl8RktSZjoHehHWld4SiG1R8O3AAn-I5tRmSYF5y2Yc-GyvV7QnZcYXIeyav0eFULo4IqmkvE9W56I_56Uj02f8hbrVvlUIct0SbDrQwVdlHS5U'); background-size: cover;">
                         </div>
                         <div class="rounded-full"
-                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCatF64cOr0qSe4fUJp-s4HmaPWErtL7ak3XpZBBRHlafX_y8aYRWRofvUFOsPPGQIKi8S8mQygenrIBJ83AG62mGXPZ6ozEe6z21Qqqm0Ap0tYVEySBSS44uDhYWbILGkBGWpXqiwGL6Xmg1pcrQtxFLvPzqg0POT_a8g1Sfc8JMPi_agl7um1SU8MlFK45BqMKuRJTa0IGeGRaNoNMnwPrwklAJVFDSinFnq8wJOqRKf4-Nf_p2abZodXIDrYdWMC_8Kx6sZ8Apk'); background-size: cover;">
+                            style="width: 36px; height: 36px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCatF64cOr0qSe4fUJp-s4HmaPWErtL7ak3XpZBBRHlafX_y8aYRWRofvUFOsPPGQIKi8S8mQygenrIBJ83AG62mGXPZ6ozEe6z21Qqqm0Ap0tYVEySBSS44uDhYWbILGkBGWpXqiwGL6Xmg1pcrQtxFLvPzqg0POT_a8g1Sfc8JMPi_agl7um1SU8MlFK45BqMKuRJTa0IGeGRaNoNMnwPrwklAJVFDSinFnq8wJOqRKf4-Nf_p2abZodXIDrYdWMC_8Kx6sZ8Apk'); background-size: cover;">
                         </div>
                         <div class="rounded-full"
-                            style="width: 40px; height: 40px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBV7guKRbiMaChhyL7U2_eo0bKanljPm9JFZlof2M20gSyekmxXJDBnMqWllp5POQEGPXWEJRWUQsy-iJJT5hNZcUyKXJk0qsUDo5366SNDXTbusgKx-Mn-b3rCaKKLjzVGrbO15LYvWCLryG1k-ftEOYnxdRG2c3Lul1_OExmWEOxjzv2m4EB7T_IsNlVoQl2Z6vCkUrUDrbW7seOO4Vod4vFv0msBUcL8i_w4C6Y4FB9A20XjdM3EJKhWXthDGoijhoEHPSzd2yc'); background-size: cover;">
+                            style="width: 36px; height: 36px; border: 2px solid var(--bg-dark); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBV7guKRbiMaChhyL7U2_eo0bKanljPm9JFZlof2M20gSyekmxXJDBnMqWllp5POQEGPXWEJRWUQsy-iJJT5hNZcUyKXJk0qsUDo5366SNDXTbusgKx-Mn-b3rCaKKLjzVGrbO15LYvWCLryG1k-ftEOYnxdRG2c3Lul1_OExmWEOxjzv2m4EB7T_IsNlVoQl2Z6vCkUrUDrbW7seOO4Vod4vFv0msBUcL8i_w4C6Y4FB9A20XjdM3EJKhWXthDGoijhoEHPSzd2yc'); background-size: cover;">
                         </div>
                         <div class="rounded-full"
-                            style="width: 40px; height: 40px; background: var(--surface-highlight); border: 2px solid var(--bg-dark); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">
+                            style="width: 36px; height: 36px; background: var(--surface-highlight); border: 2px solid var(--bg-dark); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">
                             +50</div>
                     </div>
-                    <p class="text-muted" style="font-size: 0.9rem;">Empresas optimizadas este año</p>
+                    <p class="text-muted" style="font-size: 0.85rem;">Empresas optimizadas este año</p>
                 </div>
             </div>
 
             <!-- Visual Content -->
-            <div class="flex-1 relative animate-on-scroll">
+            <div class="flex-1 animate-on-scroll" style="position: relative; width: 100%;">
                 <div class="glow-blob" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
-                <div class="aspect-square lg:aspect-square shadow-2xl rounded-2xl"
-                    style="overflow: hidden; position: relative; border: 1px solid rgba(255,255,255,0.1); background: var(--surface-dark);">
+                <div class="aspect-square shadow-2xl rounded-2xl"
+                    style="overflow: hidden; position: relative; border: 1px solid rgba(255,255,255,0.1); background: var(--surface-dark); max-width: 480px; margin: 0 auto;">
                     <div
-                        style="position: absolute; inset: 0; background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCphpAjnt6K68Azr9rN-uPPbu_St3kigeizfHqH6l1GPwtc3eAGQtVfLlL38w_HTQQlAfXBpJIkuKVpvD0LFLk3J_D1IEGgOSv4rY9GBeuQcHiM0EgruXCk6HsvR70bUpvQVdHG5MM0WguU-oRH_gsXqePWEVu6PJNF-hRS1BnpFtKIINXOzy7lfsrefq5jWZ0wGRM9YpvzSyk7SdNdu5S5eegqK5Xed2DpTSAUn0vj-425kqhAPTVvPPVF4wNDHnXMfep5bqnOuyA'); background-size: cover; background-position: center; opacity: 0.8; mix-blend-mode: overlay;">
+                        style="position: absolute; inset: 0; background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCphpAjnt6K68Azr9rN-uPPbu_St3kigeizfHqH6l1GPwtc3eAGQtVfLlL38w_HTQQlAfXBpJIkuKVpvD0LFLk3J_D1IEGgOSv4rY9GBeuQcHiM0EgruXCk6HsvR70bUpvQVdHG5MM0WguU-oRH_gsXqePWEVu6PJNF-hRS1BnpFtKIINXOzy7lfsrefq5jWZ0wGRM9YpvzSyk7SdNdu5S5eegqK5Xed2DpTSAUn0vj-425kqhAPTVvPPVF4wNDHnXMfep5bqnOuyA'); background-size: cover; background-position: center; opacity: 0.9;">
                     </div>
 
                     <!-- Overlay Card -->
                     <div class="glass-panel rounded-xl"
-                        style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; padding: 1.25rem;">
-                        <div class="flex justify-between items-end mb-4">
+                        style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; padding: 1rem 1.25rem;">
+                        <div class="flex justify-between items-end mb-3">
                             <div>
-                                <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem;">
+                                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 0.15rem;">
                                     Crecimiento Mensual</p>
-                                <h3 style="font-size: 2rem; font-weight: 700;">+145%</h3>
+                                <h3 style="font-size: 1.75rem; font-weight: 700;">+145%</h3>
                             </div>
                             <span class="material-symbols-outlined"
-                                style="font-size: 2.5rem; color: var(--brand-primary);">show_chart</span>
+                                style="font-size: 2rem; color: var(--brand-primary);">show_chart</span>
                         </div>
                         <div
-                            style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden;">
+                            style="width: 100%; height: 5px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden;">
                             <div
                                 style="width: 75%; height: 100%; background: var(--brand-primary); border-radius: 99px;">
                             </div>
@@ -162,8 +210,7 @@
         <div class="container-wide py-12">
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Stat 1 -->
-                <div class="p-6 rounded-xl animate-on-scroll"
-                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                <div class="p-6 rounded-xl animate-on-scroll service-card">
                     <div class="flex items-center gap-3 mb-4">
                         <div
                             style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
@@ -173,14 +220,13 @@
                     </div>
                     <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">300%</p>
                     <p
-                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        style="color: var(--brand-primary); font-size: 0.85rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
                         <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_upward</span> Promedio
                         anual
                     </p>
                 </div>
                 <!-- Stat 2 -->
-                <div class="p-6 rounded-xl animate-on-scroll"
-                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                <div class="p-6 rounded-xl animate-on-scroll service-card">
                     <div class="flex items-center gap-3 mb-4">
                         <div
                             style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
@@ -190,14 +236,13 @@
                     </div>
                     <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">+40h</p>
                     <p
-                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        style="color: var(--brand-primary); font-size: 0.85rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
                         <span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span> Ahorradas
                         por semana
                     </p>
                 </div>
                 <!-- Stat 3 -->
-                <div class="p-6 rounded-xl animate-on-scroll"
-                    style="background: var(--surface-highlight); border: 1px solid rgba(255,255,255,0.05);">
+                <div class="p-6 rounded-xl animate-on-scroll service-card">
                     <div class="flex items-center gap-3 mb-4">
                         <div
                             style="padding: 0.5rem; background: rgba(143, 243, 43, 0.1); border-radius: 0.5rem; color: var(--brand-primary); display: flex;">
@@ -207,7 +252,7 @@
                     </div>
                     <p style="font-size: 2.5rem; font-weight: 700; line-height: 1;">50+</p>
                     <p
-                        style="color: var(--brand-primary); font-size: 0.9rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+                        style="color: var(--brand-primary); font-size: 0.85rem; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
                         <span class="material-symbols-outlined" style="font-size: 1rem;">star</span> Proyectos
                         completados
                     </p>
@@ -216,130 +261,186 @@
         </div>
     </section>
 
-    <!-- Services Grid -->
+    <!-- Services Grid Section -->
     <section class="py-20">
         <div class="container-wide">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Nuestros Servicios Tecnológicos</h2>
-                    <p class="text-muted" style="font-size: 1.1rem; max-width: 600px;">Soluciones integrales diseñadas
+                    <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; font-weight: 700;">Nuestros
+                        Servicios Tecnológicos</h2>
+                    <p class="text-muted" style="font-size: 1rem; max-width: 550px;">Soluciones integrales diseñadas
                         para la era digital, desde la infraestructura hasta la conversión.</p>
                 </div>
-                <button class="btn"
-                    style="color: var(--brand-primary); background: transparent; padding: 0; display: flex; align-items: center; gap: 0.5rem; font-weight: 700;">
-                    Ver todos <span class="material-symbols-outlined">arrow_forward</span>
-                </button>
+                <a href="#services" class="flex items-center gap-2"
+                    style="color: var(--brand-primary); font-weight: 700; white-space: nowrap;">
+                    Ver todos los servicios <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Service 1 -->
-                <div class="card card-hover rounded-xl overflow-hidden animate-on-scroll"
-                    style="background: var(--surface-dark); border: 1px solid rgba(255,255,255,0.05);">
+                <!-- Service 1: IA Implementation -->
+                <div class="service-card rounded-xl overflow-hidden animate-on-scroll">
                     <div class="grid sm:grid-cols-5 h-full">
                         <div class="sm:col-span-2"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXggt61wXPM9lmT_qvZ7S_dbhv_FqHJTeL0l0RXF6SGsjD-F4jpl7T_wqK1qauzFLNB_4GFGzqJKGxBXwsRH-xS__EgP308CsNJKlaX6t2hp5_lsO3_4Wu8zaAd4yui3ttQ-ni7YmNpZVtsKiCjZ9UT5NyrkkUR7E30yW3SAwyqMm3mPr_lgQKm-YXMCtNAlwOtKODcXY7lEfFu6AkwnD9tdN5MD3vDmSGfYOSLBVmi1WN_wiZFpCIaes-rqmwh2TAtr_IahwhD24'); background-size: cover; background-position: center; min-height: 200px;">
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXggt61wXPM9lmT_qvZ7S_dbhv_FqHJTeL0l0RXF6SGsjD-F4jpl7T_wqK1qauzFLNB_4GFGzqJKGxBXwsRH-xS__EgP308CsNJKlaX6t2hp5_lsO3_4Wu8zaAd4yui3ttQ-ni7YmNpZVtsKiCjZ9UT5NyrkkUR7E30yW3SAwyqMm3mPr_lgQKm-YXMCtNAlwOtKODcXY7lEfFu6AkwnD9tdN5MD3vDmSGfYOSLBVmi1WN_wiZFpCIaes-rqmwh2TAtr_IahwhD24'); background-size: cover; background-position: center; min-height: 180px;">
                         </div>
                         <div class="p-6 sm:col-span-3 flex flex-col justify-between">
                             <div>
                                 <div class="flex justify-between items-start mb-2">
-                                    <h3 style="font-size: 1.25rem; font-weight: 700;">Implementación de IA</h3>
+                                    <h3 style="font-size: 1.15rem; font-weight: 700;">Implementación de IA</h3>
                                     <span class="material-symbols-outlined text-muted">smart_toy</span>
                                 </div>
                                 <p class="text-muted text-sm mb-4">Optimización de flujos de trabajo mediante chatbots
-                                    inteligentes y algoritmos predictivos.</p>
+                                    inteligentes, algoritmos predictivos y automatización de procesos repetitivos.</p>
                             </div>
                             <div class="flex gap-2 flex-wrap">
-                                <span
-                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Python</span>
-                                <span
-                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">TensorFlow</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">OpenAI</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="card card-hover rounded-xl overflow-hidden animate-on-scroll"
-                    style="background: var(--surface-dark); border: 1px solid rgba(255,255,255,0.05);">
+                <!-- Service 2: Marketing Data-Driven -->
+                <div class="service-card rounded-xl overflow-hidden animate-on-scroll">
                     <div class="grid sm:grid-cols-5 h-full">
                         <div class="sm:col-span-2"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkNAgP-xptgldeReLfvQ754HSwTXAEtuJsEgl095Z396Ue3EsM5WPDKfoI5i4rCVgFeiScv_W-6p9TBgyRkwIPCxryKOoHX9Kt4DdojKNTVjt-phrkL-4UknbaQ5iEz0jT_43F5HTodSn4hufnPrCqwbMCXNTenAUN2RN2GTO2gQoQdS0Zd5PElRBNXBS96wJc2zUi32jjb2sBKeQQ1-76j6nZSboz0bNAVByZQiJRj2owSjaMppLffyRv5s1RM-kignzwBVUtCJU'); background-size: cover; background-position: center; min-height: 200px;">
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkNAgP-xptgldeReLfvQ754HSwTXAEtuJsEgl095Z396Ue3EsM5WPDKfoI5i4rCVgFeiScv_W-6p9TBgyRkwIPCxryKOoHX9Kt4DdojKNTVjt-phrkL-4UknbaQ5iEz0jT_43F5HTodSn4hufnPrCqwbMCXNTenAUN2RN2GTO2gQoQdS0Zd5PElRBNXBS96wJc2zUi32jjb2sBKeQQ1-76j6nZSboz0bNAVByZQiJRj2owSjaMppLffyRv5s1RM-kignzwBVUtCJU'); background-size: cover; background-position: center; min-height: 180px;">
                         </div>
                         <div class="p-6 sm:col-span-3 flex flex-col justify-between">
                             <div>
                                 <div class="flex justify-between items-start mb-2">
-                                    <h3 style="font-size: 1.25rem; font-weight: 700;">Marketing Data-Driven</h3>
+                                    <h3 style="font-size: 1.15rem; font-weight: 700;">Marketing Data-Driven</h3>
                                     <span class="material-symbols-outlined text-muted">analytics</span>
                                 </div>
-                                <p class="text-muted text-sm mb-4">Estrategias de crecimiento basadas en datos reales y
-                                    automatización.</p>
+                                <p class="text-muted text-sm mb-4">Estrategias de crecimiento basadas en datos reales.
+                                    Funnels de conversión automatizados y segmentación avanzada.</p>
                             </div>
                             <div class="flex gap-2 flex-wrap">
-                                <span
-                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Google
-                                    Ads</span>
-                                <span
-                                    style="font-family: monospace; font-size: 0.75rem; padding: 4px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: rgba(255,255,255,0.5);">Analytics</span>
+                                <span class="tech-tag">Google Ads</span>
+                                <span class="tech-tag">Meta</span>
+                                <span class="tech-tag">Analytics</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Full Width - Web & Apps -->
+            <div class="service-card rounded-xl overflow-hidden animate-on-scroll mt-6">
+                <div class="grid sm:grid-cols-5 h-full">
+                    <div class="sm:col-span-2 lg:col-span-1"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZJzkKf8ev0MVO-V0Wknh7SIJO416WJcGVk93TCEfZzggUWTXQLhEgU9cp4HI83hYMd8MUK_UGHd3ROqh7qyUueSGwbEFqU7YwsF67QPYwKj8U6sKry5b9eH1ImjpZddmoo3WlwwkzaV5XEKpP1Kjdk6TCq2scssR8d4LgOkslYchSkB6eB_WqPiP4T7tvG6b9Cr_-dTxKPuFDznbr2bOAK5nueU9WQLIas_Lw6vdsWy2oyoeR_JRIfxy0iqHMQpcZROzpi9bx_T4'); background-size: cover; background-position: center; min-height: 180px;">
+                    </div>
+                    <div
+                        class="p-6 sm:col-span-3 lg:col-span-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Desarrollo Web &
+                                Apps</h3>
+                            <p class="text-muted text-sm mb-4" style="max-width: 500px;">Creamos experiencias digitales
+                                de alto rendimiento. Sitios web ultrarrápidos, aplicaciones web progresivas (PWA) y
+                                plataformas de comercio electrónico escalables.</p>
+                            <div class="flex gap-3 flex-wrap items-center text-xs text-muted">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined"
+                                        style="font-size: 1rem; color: var(--brand-primary);">check</span> React /
+                                    Next.js</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined"
+                                        style="font-size: 1rem; color: var(--brand-primary);">check</span>
+                                    Node.js</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined"
+                                        style="font-size: 1rem; color: var(--brand-primary);">check</span> AWS
+                                    Cloud</span>
+                            </div>
+                        </div>
+                        <a href="proyectos.html" class="btn"
+                            style="background: var(--brand-primary); color: #192210; font-weight: 700; padding: 0.6rem 1.5rem; font-size: 0.85rem; border-radius: 9999px; white-space: nowrap;">Ver
+                            Detalles</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Audit -->
-    <section id="audit" class="py-20">
+    <!-- CTA Section -->
+    <section id="cta" class="py-20">
         <div class="container-wide">
-            <div class="rounded-xl overflow-hidden relative"
-                style="background: var(--brand-primary); color: var(--bg-dark);">
+            <div class="rounded-2xl overflow-hidden"
+                style="background: var(--brand-primary); color: var(--bg-dark); position: relative;">
                 <div
-                    style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px; opacity: 0.1; position: absolute; inset: 0;">
+                    style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px; opacity: 0.08; position: absolute; inset: 0;">
                 </div>
-                <div class="grid lg:grid-cols-3 gap-8 p-12 items-center relative z-10">
-                    <div class="lg:col-span-2">
-                        <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem;">¿Listo
-                            para escalar?</h2>
-                        <p style="font-size: 1.25rem; font-weight: 500; opacity: 0.9;">Agenda una sesión estratégica de
-                            30 minutos y descubre cómo la IA puede optimizar tu negocio hoy mismo.</p>
+                <div class="flex flex-col lg:flex-row gap-8 p-12 items-center justify-between"
+                    style="position: relative; z-index: 10;">
+                    <div style="flex: 1;">
+                        <h2
+                            style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; line-height: 1.15; margin-bottom: 0.75rem;">
+                            ¿Listo para escalar?</h2>
+                        <p style="font-size: 1.1rem; font-weight: 400; opacity: 0.85; max-width: 500px;">Agenda una
+                            sesión estratégica de 30 minutos y descubre cómo la IA puede optimizar tu negocio hoy mismo.
+                        </p>
                     </div>
-                    <div>
-                        <button class="btn btn-primary w-full"
-                            style="background: var(--bg-dark); color: white; height: 3.5rem; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">Agendar
-                            Auditoría Gratis</button>
-                    </div>
+                    <a href="contacto.html" class="btn w-full lg:w-auto"
+                        style="background: var(--bg-dark); color: white; padding: 1rem 2.5rem; font-size: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.25); border-radius: 9999px; text-align: center; white-space: nowrap;">Agendar
+                        Auditoría Gratis</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12">
+    <footer class="py-12" style="border-top: 1px solid rgba(255,255,255,0.05);">
         <div class="container-wide">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-2 mb-4">
                         <span class="material-symbols-outlined"
-                            style="color: var(--brand-primary); font-size: 2rem;">dataset</span>
-                        <span style="font-weight: 700; font-size: 1.25rem;">Jesús Palafox</span>
+                            style="color: var(--brand-primary); font-size: 1.75rem;">dataset</span>
+                        <span style="font-weight: 700; font-size: 1.1rem;">Jesús Palafox</span>
                     </div>
-                    <p class="text-muted text-sm">Innovación tecnológica aplicada a Logística, Real Estate, Marketing y
-                        Gastronomía.</p>
+                    <p class="text-muted text-sm" style="line-height: 1.6;">Innovación tecnológica aplicada a Logística,
+                        Real Estate, Marketing y Gastronomía.</p>
                 </div>
                 <div>
-                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Servicios</h4>
-                    <ul class="text-muted text-sm text-col-container" style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;"><a href="#">Consultoría IA</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#">Desarrollo Web</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#">Automatización</a></li>
+                    <h4 style="font-weight: 700; margin-bottom: 1rem; font-size: 0.95rem;">Servicios</h4>
+                    <ul class="text-muted text-sm" style="list-style: none; padding: 0; line-height: 2;">
+                        <li><a href="#" style="transition: color 0.2s;">Consultoría IA</a></li>
+                        <li><a href="#" style="transition: color 0.2s;">Desarrollo Web</a></li>
+                        <li><a href="#" style="transition: color 0.2s;">Automatización</a></li>
+                        <li><a href="#" style="transition: color 0.2s;">Auditoría SEO</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1rem; font-size: 0.95rem;">Empresa</h4>
+                    <ul class="text-muted text-sm" style="list-style: none; padding: 0; line-height: 2;">
+                        <li><a href="trayectoria.html" style="transition: color 0.2s;">Sobre Mí</a></li>
+                        <li><a href="proyectos.html" style="transition: color 0.2s;">Portafolio</a></li>
+                        <li><a href="#" style="transition: color 0.2s;">Blog</a></li>
+                        <li><a href="contacto.html" style="transition: color 0.2s;">Contacto</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t border-white/5 text-center text-muted text-xs">
-                © 2026 Jesús Palafox. Todos los derechos reservados.
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8"
+                style="border-top: 1px solid rgba(255,255,255,0.05);">
+                <p class="text-muted text-xs">© 2026 Jesús Palafox. Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <a href="#" aria-label="LinkedIn" style="color: rgba(255,255,255,0.4); transition: color 0.2s;">
+                        <svg fill="currentColor" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" style="color: rgba(255,255,255,0.4); transition: color 0.2s;">
+                        <svg fill="currentColor" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 

@@ -184,18 +184,201 @@ img {
 }
 
 /* Responsive Grid/Flex Utilities */
+@media (min-width: 640px) {
+    .sm\:flex-row {
+        flex-direction: row;
+    }
+
+    .sm\:grid-cols-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .sm\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .sm\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .sm\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .md\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .md\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+}
+
 @media (min-width: 1024px) {
+    .lg\:flex-row {
+        flex-direction: row;
+    }
+
     .lg\:grid-cols-2 {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lg\:col-span-2 {
+        grid-column: span 2 / span 2;
     }
 
     .lg\:aspect-square {
         aspect-ratio: 1 / 1;
     }
 
-    .lg\:col-span-2 {
-        grid-column: span 2 / span 2;
+    .lg\:py-32 {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
+}
+
+/* Padding & Margin Utilities */
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.pt-8 {
+    padding-top: 2rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+.gap-16 {
+    gap: 4rem;
+}
+
+/* Width Utilities */
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+/* Text Utilities */
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+/* Flex Alignment */
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden;
 }
 
 /* Animations */
